@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Заголовок</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+		<link rel="stylesheet" href="libs/OwlCarousel/dist/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="libs/OwlCarousel/dist/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="css/font.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/media.css">
+	</head>
+	<body>
+		<div class="page">
+			<header>
+				<div class="container container-mob">
+					<div class="row">
+						<ul class="header-mob">
+							<li class="header-mob-left">
+								<div class="burger-menu__tab">
+									<input type="checkbox" id="hmt__tab" class="hidden-menu-ticker-tab">
+									<label class="btn-menu-tab" for="hmt__tab">
+										<span class="first-tab"></span>
+										<span class="second-tab"></span>
+										<span class="third-tab"></span>
+									</label>
+									<ul class="hidden-menu__tab">
+										<li class="mob-menu-first">
+											<img src="img/index/Logo.png" alt="" class="menu-mob-logo">
+											<form id="search-mob" action="" method="get">
+												<input id="search-input-mob" name="s" placeholder="Поиск" type="search">
+												<button id="search-btn-mob" type="submit">
+												<img src="img/icons/search.png" alt="">
+												</button>
+											</form>
+											<p>
+												<a href="#" class="btn-first">Вход</a>
+												<a href="#" class="btn-first">Регистрация</a>
+											</p>
+										</li>
+										<li class="mob-menu-second">
+											<a href="#">КАЛЬЯНЫ</a>
+											<a href="#">табак</a>
+											<a href="#">чаши</a>
+											<a href="#">угли</a>
+											<a href="#">колбы</a>
+											<a href="#">Аксессуары</a>
+											<a href="#">магазины <img src="img/icons/map-black.png" alt=""></a>
+										</li>
+										<li class="mob-menu-third">
+											<a href="#">Оплата и доставка</a>
+											<a href="#">Гарантии</a>
+											<a href="#">О магазине</a>
+											<a href="#">Помощь</a>
+										</li>
+										<li class="mob-menu-four">
+											<a href="#">
+												<p><img src="img/icons/phone.png" alt=""></p>
+												<p>+7 (495) 142 18 40 <span>Ждем Вашего звонка!</span></p>
+											</a>
+											<a href="#">
+												<p><img src="img/icons/watsup.png" alt=""></p>
+												<p>+7 (495) 142 18 40 <span>Мы в WhatsApp</span></p>
+											</a>
+										</li>
+										<li class="mob-menu-five">
+											<a href="#"><img src="img/icons/vk.png" alt=""></a>
+											<a href="#"><img src="img/icons/youtybe.png" alt=""></a>
+											<a href="#"><img src="img/icons/inst.png" alt=""></a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header-mob-logo">
+								<img src="img/index/Logo.png" alt="">
+								<p>Кальянные магазины <span>нового поколения</span></p>
+							</li>
+							<li class="header-mob-right">
+								<a href=""><img src="img/icons/favorites.png" alt=""></a>
+								<a href=""><img src="img/icons/cart.png" alt=""></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="container container-line container-none-mob">
+					<div class="row">
+						<ul class="header-top">
+							<li><a href="#" class="header_img">
+								<img src="img/icons/vk.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header_img">
+								<img src="img/icons/youtybe.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header_img">
+								<img src="img/icons/inst.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">Оплата и доставка</a>
+						</li>
+						<li>
+							<a href="#">Гарантии</a>
+						</li>
+						<li>
+							<a href="#">О магазине</a>
+						</li>
+						<li>
+							<a href="#">Помощь</a>
+						</li>
+						<li>
+							<a href="#">
+								<img class="hover_grey" src="img/icons/enter.png" alt="">
+							</a>
+							<a href="#">Вход</a>
+						</li>
+						<li>
+							<a href="#">
+								<img class="hover_grey" src="img/icons/registration.png" alt="">
+							</a>
+							<a href="#">
+								Регистрация
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container container-none-mob">
+				<div class="row">
+					<ul class="header-center">
+						<li>
+							<img src="img/index/Logo.png" alt="">
+						</li>
+						<li>Кальянные магазины нового поколения</li>
+						<li>
+							<form id='search' action="" method="get">
+								<input id="search-input" name="s" placeholder="Поиск" type="search">
+								<button id="search-btn" type="submit">
+								<img src="img/icons/search.png" alt="">
+								</button>
+							</form>
+						</li>
+						<li id="num-none">
+							<a href="tel:+74951421840">
+								<p><img src="img/icons/phone.png" alt=""></p>
+								<p>+7 (495) 142 18 40 <span>Ждем Вашего звонка!</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="tel:+74951421840">
+								<p><img src="img/icons/watsup.png" alt=""></p>
+								<p>+7 (495) 142 89 40<span>Мы в WhatsApp</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>
+									<img src="img/icons/favorites.png" alt="">
+								</span>
+								Моя подборка
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>
+									<img src="img/icons/cart.png" alt="">
+								</span>
+								Корзина
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container container-black container-none-mob">
+				<div class="row">
+					<ul class="header-bottom">
+						<li><a href="#">кальяны</a></li>
+						<li><a href="#">Табак</a></li>
+						<li><a href="#">чаши</a></li>
+						<li><a href="#">угли</a></li>
+						<li><a href="#">колбы</a></li>
+						<li><a href="#">аксессуары</a></li>
+						<li>
+							<a href="#">
+								<span>
+									<img src="img/icons/map.png" alt="">
+								</span>
+								магазины
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="index-body">
+			<div class="container">
+				<div class="row">
+					<div class="owl-carousel owl-carousel-1 owl-theme">
+						<div class="item">
+							<img src="img/index/slideOne.jpg" alt="" class="slide_first_img">
+							<img src="img/index/frameOne.png" alt="" class="frame">
+							<div class="item-buy">
+								<p class="text-slide">Онлайн заказ и доставка по москве 24 часа</p>
+								<a href="#" class="btn-buy">перейти к покупкам</a>
+							</div>
+							<div class="navigation">
+								<p id="num-nav">01</p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="img/index/slideOne.jpg" alt="" class="slide_first_img">
+							<img src="img/index/frameOne.png" alt="" class="frame">
+							<div class="item-buy">
+								<p class="text-slide">Онлайн заказ и доставка по москве 24 часа</p>
+								<a href="#" class="btn-buy">перейти к покупкам</a>
+							</div>
+							<div class="navigation">
+								<p id="num-nav">02</p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="img/index/slideOne.jpg" alt="" class="slide_first_img">
+							<img src="img/index/frameOne.png" alt="" class="frame">
+							<div class="item-buy">
+								<p class="text-slide">Онлайн заказ и доставка по москве 24 часа</p>
+								<a href="#" class="btn-buy">перейти к покупкам</a>
+							</div>
+							<div class="navigation">
+								<p id="num-nav">03</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="carousel-2">
+						<div class="header-owl">
+							<p>НОвинки</p>
+							<div class="navigation-2"></div>
+						</div>
+						<div class="owl-carousel owl-carousel-2 owl-theme">
+							<div class="item product">
+								<ul>
+									<li>
+										<div class="new">
+											<p class="new-par-1"><span>новинка</span></p>
+											<p class="new-par-2"></p>
+											<p class="new-par-3"></p>
+										</div>
+									</li>
+									<li class="product_picture">
+										<img src="img/index/product-1.jpg" alt="">
+									</li>
+									<li>
+										<p>Кальян DSH Mini <span>Бюджетный и компактный вариант на каждый день.</span></p>
+									</li>
+									<li>
+										<span>
+										<p>Новая цена<span>4 400 р.</span></p>
+										<p>Старая цена<span>5 300 р.</span></p>
+										</span>
+										<span>
+										<a href="#"><img src="img/icons/product-hurt.png" alt=""></a>
+										<a href="#"><img src="img/icons/cartTwo.png" alt=""></a>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="item product">
+								<ul>
+									<li>
+										<div class="new">
+											<p class="new-par-1"><span>новинка</span></p>
+											<p class="new-par-2"></p>
+											<p class="new-par-3"></p>
+										</div>
+									</li>
+									<li class="product_picture">
+										<img src="img/index/product-2.jpg" alt="">
+									</li>
+									<li>
+										<p>Кальян Hoob Mars C <span>Стильный утонченный дизайн и только лучшие материалы.</span></p>
+									</li>
+									<li>
+										<span>
+										<p>цена<span>4 400 р.</span></p>
+										</span>
+										<span>
+										<a href="#"><img src="img/icons/product-hurt.png" alt=""></a>
+										<a href="#"><img src="img/icons/cartTwo.png" alt=""></a>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="item product">
+								<ul>
+									<li>
+										<div class="new">
+											<p class="new-par-1"><span>новинка</span></p>
+											<p class="new-par-2"></p>
+											<p class="new-par-3"></p>
+										</div>
+									</li>
+									<li class="product_picture">
+										<img src="img/index/product-1.jpg" alt="">
+									</li>
+									<li>
+										<p>Кальян DSH Mini <span>Бюджетный и компактный вариант на каждый день.</span></p>
+									</li>
+									<li>
+										<span>
+										<p>Новая цена<span>4 400 р.</span></p>
+										<p>Старая цена<span>5 300 р.</span></p>
+										</span>
+										<span>
+										<a href="#"><img src="img/icons/product-hurt.png" alt=""></a>
+										<a href="#"><img src="img/icons/cartTwo.png" alt=""></a>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="item product">
+								<ul>
+									<li>
+										<div class="new">
+											<p class="new-par-1"><span>новинка</span></p>
+											<p class="new-par-2"></p>
+											<p class="new-par-3"></p>
+										</div>
+									</li>
+									<li class="product_picture">
+										<img src="img/index/product-3.jpg" alt="">
+									</li>
+									<li>
+										<p>Уголь для кальяна Darkside Flat 1кг, 120 шт</p>
+									</li>
+									<li>
+										<span>
+										<p>Новая цена<span>4 400 р.</span></p>
+										<p>Старая цена<span>5 300 р.</span></p>
+										</span>
+										<span>
+										<a href="#"><img src="img/icons/product-hurt.png" alt=""></a>
+										<a href="#"><img src="img/icons/cartTwo.png" alt=""></a>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="item product">
+								<ul>
+									<li>
+										<div class="new">
+											<p class="new-par-1"><span>новинка</span></p>
+											<p class="new-par-2"></p>
+											<p class="new-par-3"></p>
+										</div>
+									</li>
+									<li class="product_picture">
+										<img src="img/index/product-1.jpg" alt="">
+									</li>
+									<li>
+										<p>Кальян DSH Mini <span>Бюджетный и компактный вариант на каждый день.</span></p>
+									</li>
+									<li>
+										<span>
+										<p>Новая цена<span>4 400 р.</span></p>
+										<p>Старая цена<span>5 300 р.</span></p>
+										</span>
+										<span>
+										<a href="#"><img src="img/icons/product-hurt.png" alt=""></a>
+										<a href="#"><img src="img/icons/cartTwo.png" alt=""></a>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="item product">
+								<ul>
+									<li>
+										<div class="new">
+											<p class="new-par-1"><span>новинка</span></p>
+											<p class="new-par-2"></p>
+											<p class="new-par-3"></p>
+										</div>
+									</li>
+									<li class="product_picture">
+										<img src="img/index/product-2.jpg" alt="">
+									</li>
+									<li>
+										<p>Кальян DSH Mini <span>Бюджетный и компактный вариант на каждый день.</span></p>
+									</li>
+									<li>
+										<span>
+										<p>цена<span>4 400 р.</span></p>
+										</span>
+										<span>
+										<a href="#"><img src="img/icons/product-hurt.png" alt=""></a>
+										<a href="#"><img src="img/icons/cartTwo.png" alt=""></a>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="item product">
+								<ul>
+									<li>
+										<div class="new">
+											<p class="new-par-1"><span>новинка</span></p>
+											<p class="new-par-2"></p>
+											<p class="new-par-3"></p>
+										</div>
+									</li>
+									<li class="product_picture">
+										<img src="img/index/product-1.jpg" alt="">
+									</li>
+									<li>
+										<p>Кальян DSH Mini <span>Бюджетный и компактный вариант на каждый день.</span></p>
+									</li>
+									<li>
+										<span>
+										<p>Новая цена<span>4 400 р.</span></p>
+										<p>Старая цена<span>5 300 р.</span></p>
+										</span>
+										<span>
+										<a href="#"><img src="img/icons/product-hurt.png" alt=""></a>
+										<a href="#"><img src="img/icons/cartTwo.png" alt=""></a>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="item product">
+								<ul>
+									<li>
+										<div class="new">
+											<p class="new-par-1"><span>новинка</span></p>
+											<p class="new-par-2"></p>
+											<p class="new-par-3"></p>
+										</div>
+									</li>
+									<li class="product_picture">
+										<img src="img/index/product-3.jpg" alt="">
+									</li>
+									<li>
+										<p>Кальян DSH Mini <span>Бюджетный и компактный вариант на каждый день.</span></p>
+									</li>
+									<li>
+										<span>
+										<p>Новая цена<span>4 400 р.</span></p>
+										<p>Старая цена<span>5 300 р.</span></p>
+										</span>
+										<span>
+										<a href="#"><img src="img/icons/product-hurt.png" alt=""></a>
+										<a href="#"><img src="img/icons/cartTwo.png" alt=""></a>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="carousel-3">
+					<div class="header-owl-2">
+						<p>ХИТЫ продаж</p>
+						<div class="navigation-3"></div>
+					</div>
+					<div class="owl-carousel owl-carousel-3 owl-theme">
+						<div class="item product">
+							<ul>
+								<li>
+									<div class="new">
+										<p class="new-par-1"><span>новинка</span></p>
+										<p class="new-par-2"></p>
+										<p class="new-par-3"></p>
+									</div>
+								</li>
+								<li class="product_picture">
+									<img src="img/index/product-1.jpg" alt="">
+								</li>
+								<li class="product_text">
+									<p>Кальян DSH Mini <span>Бюджетный и компактный вариант на каждый день.</span></p>
+								</li>
+								<li>
+									<span>
+									<p>Новая цена<span>4 400 р.</span></p>
+									<p>Старая цена<span>5 300 р.</span></p>
+									</span>
+									<span>
+									<a href="#"><img src="img/icons/product-hurt.png" alt=""></a>
+									<a href="#"><img src="img/icons/cartTwo.png" alt=""></a>
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class="item product">
+							<ul>
+								<li>
+									<div class="sell">
+										<p class="sell-par-1"><span>хит продаж</span></p>
+										<p class="sell-par-2"></p>
+										<p class="sell-par-3"></p>
+									</div>
+								</li>
+								<li class="product_picture">
+									<img src="img/index/product-2.jpg" alt="">
+								</li>
+								<li class="product_text">
+									<p>Кальян DSH Mini <span>Бюджетный и компактный вариант на каждый день.</span></p>
+								</li>
+								<li>
+									<span>
+									<p>цена<span>4 400 р.</span></p>
+									</span>
+									<span>
+									<a href="#"><img src="img/icons/product-hurt.png" alt=""></a>
+									<a href="#"><img src="img/icons/cartTwo.png" alt=""></a>
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class="item product">
+							<ul>
+								<li>
+									<div class="stock">
+										<p class="stock-par-1"><span>Акция</span></p>
+										<p class="stock-par-2"></p>
+										<p class="stock-par-3"></p>
+									</div>
+									<div class="new tag-abs">
+										<p class="new-par-1"><span>новинка</span></p>
+										<p class="new-par-2"></p>
+										<p class="new-par-3"></p>
+									</div>
+									<div class="sell tag-abs-two">
+										<p class="sell-par-1"><span>хит продаж</span></p>
+										<p class="sell-par-2"></p>
+										<p class="sell-par-3"></p>
+									</div>
+								</li>
+								<li class="product_picture">
+									<img src="img/index/product-1.jpg" alt="">
+								</li>
+								<li class="product_text">
+									<p>Кальян DSH Mini <span>Бюджетный и компактный вариант на каждый день.</span></p>
+								</li>
+								<li>
+									<span>
+									<p>Новая цена<span>4 400 р.</span></p>
+									<p>Старая цена<span>5 300 р.</span></p>
+									</span>
+									<span>
+									<a href="#"><img src="img/icons/product-hurt.png" alt=""></a>
+									<a href="#"><img src="img/icons/cartTwo.png" alt=""></a>
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class="item product">
+							<ul>
+								<li>
+								</li>
+								<li class="product_picture">
+									<img src="img/index/product-4.jpg" alt="">
+								</li>
+								<li class="product_text">
+									<p>Кальян Soft Smoke Elegant <span>Элегантный кальян полностью из нержавеющей стали.</span></p>
+								</li>
+								<li>
+									<span>
+									<p>Новая цена<span>4 400 р.</span></p>
+									<p>Старая цена<span>5 300 р.</span></p>
+									</span>
+									<span>
+									<a href="#"><img src="img/icons/product-hurt.png" alt=""></a>
+									<a href="#"><img src="img/icons/cartTwo.png" alt=""></a>
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class="item product">
+							<ul>
+								<li>
+									<div class="new">
+										<p class="new-par-1"><span>новинка</span></p>
+										<p class="new-par-2"></p>
+										<p class="new-par-3"></p>
+									</div>
+								</li>
+								<li class="product_picture">
+									<img src="img/index/product-1.jpg" alt="">
+								</li>
+								<li class="product_text">
+									<p>Кальян DSH Mini <span>Бюджетный и компактный вариант на каждый день.</span></p>
+								</li>
+								<li>
+									<span>
+									<p>Новая цена<span>4 400 р.</span></p>
+									<p>Старая цена<span>5 300 р.</span></p>
+									</span>
+									<span>
+									<a href="#"><img src="img/icons/product-hurt.png" alt=""></a>
+									<a href="#"><img src="img/icons/cartTwo.png" alt=""></a>
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class="item product">
+							<ul>
+								<li>
+									<div class="sell">
+										<p class="sell-par-1"><span>хит продаж</span></p>
+										<p class="sell-par-2"></p>
+										<p class="sell-par-3"></p>
+									</div>
+								</li>
+								<li class="product_picture">
+									<img src="img/index/product-2.jpg" alt="">
+								</li>
+								<li class="product_text">
+									<p>Кальян DSH Mini <span>Бюджетный и компактный вариант на каждый день.</span></p>
+								</li>
+								<li>
+									<span>
+									<p>цена<span>4 400 р.</span></p>
+									</span>
+									<span>
+									<a href="#"><img src="img/icons/product-hurt.png" alt=""></a>
+									<a href="#"><img src="img/icons/cartTwo.png" alt=""></a>
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class="item product">
+							<ul>
+								<li>
+									<div class="stock">
+										<p class="stock-par-1"><span>Акция</span></p>
+										<p class="stock-par-2"></p>
+										<p class="stock-par-3"></p>
+									</div>
+									<div class="new tag-abs">
+										<p class="new-par-1"><span>новинка</span></p>
+										<p class="new-par-2"></p>
+										<p class="new-par-3"></p>
+									</div>
+									<div class="sell tag-abs-two">
+										<p class="sell-par-1"><span>хит продаж</span></p>
+										<p class="sell-par-2"></p>
+										<p class="sell-par-3"></p>
+									</div>
+								</li>
+								<li class="product_picture">
+									<img src="img/index/product-1.jpg" alt="">
+								</li>
+								<li class="product_text">
+									<p>Кальян DSH Mini <span>Бюджетный и компактный вариант на каждый день.</span></p>
+								</li>
+								<li>
+									<span>
+									<p>Новая цена<span>4 400 р.</span></p>
+									<p>Старая цена<span>5 300 р.</span></p>
+									</span>
+									<span>
+									<a href="#"><img src="img/icons/product-hurt.png" alt=""></a>
+									<a href="#"><img src="img/icons/cartTwo.png" alt=""></a>
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class="item product">
+							<ul>
+								<li>
+								</li>
+								<li class="product_picture">
+									<img src="img/index/product-4.jpg" alt="">
+								</li>
+								<li class="product_text">
+									<p>Кальян Soft Smoke Elegant <span>Элегантный кальян полностью из нержавеющей стали.</span></p>
+								</li>
+								<li>
+									<span>
+									<p>Новая цена<span>4 400 р.</span></p>
+									<p>Старая цена<span>5 300 р.</span></p>
+									</span>
+									<span>
+									<a href="#"><img src="img/icons/product-hurt.png" alt=""></a>
+									<a href="#"><img src="img/icons/cartTwo.png" alt=""></a>
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="group">
+					<img src="img/index/frameTwo.png" alt="" class="frame_all">
+					<img src="img/index/transition.png" alt="" class="transition">
+					<img src="img/index/transitionBottom.png" alt="" class="transition_two">
+					<img src="img/index/logoIndex.png" alt="" class="logo_index">
+					<div class="index_video">
+						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/s2Od-cim9Jk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="text_video">
+						<p><span><img src="img/icons/star.png" alt="">Nuahule Group<img src="img/icons/star.png" alt=""></span>
+							<span>Мы рады быть частью большой и дружной семьи Nuahule Group. Заведения Nuahule Store — это не только самый топовый ассортимент и профессионализм, это — в своем роде, религия и свобода, доступная не каждому.
+								Обзоры всех новинок смотрите на нашем канале Nuahule Movie. Лучшем кальянном блоге 2017 года.
+							</span>
+						</p>
+						<a href="#">Смотреть Nuahule Movie</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="interesting">
+					<p class="name_container">
+						Интересное <span>&Полезное</span>
+					</p>
+					<ul class="index-news">
+						<li>
+							<p>12.05.2019</p>
+							<p>Выбор кальяна – как выбрать кальян и не ошибиться</p>
+							<p>Кальян – сложное устройство с немалым количеством элементов, выбор каждого из которых представляет собой нелегкий для новичка процесс.</p>
+							<a href="#">ЧИТАТЬ <span><img src="img/icons/arrowGreen.png" alt=""></span></a>
+						</li>
+						<li>
+							<p>12.05.2019</p>
+							<p>10 признаков классного табака</p>
+							<p>Кальян – сложное устройство с немалым количеством элементов, выбор каждого из которых представляет собой нелегкий для новичка процесс.</p>
+							<a href="#">ЧИТАТЬ <span><img src="img/icons/arrowGreen.png" alt=""></span></a>
+						</li>
+						<li>
+							<p>12.05.2019</p>
+							<p>Выбор кальяна – как выбрать кальян и не ошибиться</p>
+							<p>Кальян – сложное устройство с немалым количеством элементов, выбор каждого из которых представляет собой нелегкий для новичка процесс.</p>
+							<a href="#">ЧИТАТЬ <span><img src="img/icons/arrowGreen.png" alt=""></span></a>
+						</li>
+						<li>
+							<p>12.05.2019</p>
+							<p>10 признаков классного табака</p>
+							<p>Кальян – сложное устройство с немалым количеством элементов, выбор каждого из которых представляет собой нелегкий для новичка процесс.</p>
+							<a href="#">ЧИТАТЬ <span><img src="img/icons/arrowGreen.png" alt=""></span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="ourMailing">
+					<p>Подпишитесь на <span>нашу рассылку</span></p>
+					<p>Раз в месяц мы рассылаем информацию о новых поступлениях, скидках и новостях магазина. Присоединяйтесь к нашему сообществу!</p>
+					<form action="" method="get" id="search_mailing">
+						<input name="s" placeholder="Ваш e-mail" type="search" class="search_mailing_input">
+						<button type="submit"><img src="img/icons/button_mail.png" alt=""></button>
+					</form>
+					<p>Нажимая на кнопку, Вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">Политикой конфиденциальности сайта.</a></p>
+					<img src="img/index/frameMailing.png" alt="" class="frame_mailing">
+					<img src="img/index/frameMailingTwo.png" alt="" class="frame_mailing_two">
+				</div>
+			</div>
+		</div>
+		<div class="container container-relaive">
+			<div class="row">
+				<div class="about_us">
+					<p class="name_about_us">Интернет-магазин кальянов Nuahule Store</p>
+					<div class="container">
+						<div class="row">
+					<div class="col-lg-6 col-md-12">
+						<p>Давно искали интернет магазин, где можно купить кальян по низким ценам? Вы попали по адресу! Наш интернет-магазин — это широкий ассортимент кальянов и аксессуаров самых разных категорий по низким ценам! У нас вы сможете купить не только недорогие кальяны и аксессуары, но и эксклюзивные и премиальные продукты от лучших российских и зарубежных производителей.
+						<br><br>Колбы, чаши, шланги, мундштуки, клапаны — мы поможем собрать вам свой уникальный кальян!</p>
+					</div>
+					<div class="col-lg-6 col-md-12">	
+						<p class="p-pad">Начинающие любители задаются вопросом «Модели каких производителей купить», «какими качествами должен обладать качественный кальян?» и так далее. Углубиться в эту культуру вы сможете с интернет магазином HookahMarket — лучшим интернет-магазином кальянов и аксессуаров.
+						<br><br>Обращайтесь к нашим специалистам — они с удовольствием помогут разобраться в и собрать качественный комплект, который навсегда влюбит вас в этот процесс.</p>
+					</div>
+					<div class="col-lg-12 z-index_5">
+						<a class="href_about_us" href="#">о магазине<span><img src="img/icons/arrowGreen.png" alt=""></span></a>
+					</div>
+					</div>
+				</div>
+				</div>	
+			</div>
+			<img src="img/index/frameAboutUs.png" alt="" class="frame_about_us">
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 padding_none mobile-footer-img">
+					<img src="img/index/image_footer.jpg" alt="" class="image_footer mobile-none">
+					<img src="img/index/image_footer_mob.png" alt="" class="image_footer mobile-vision">
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<img id="footer-img" src="img/index/footer_top.png" alt="">
+					<div class="footer-top">
+						<div class="footer-table">
+							<ul class="footer-list-1">
+								<li>
+									<img src="img/index/Logo.png" alt="">
+								</li>
+								<li>
+									<a href="tel:+74951421840">
+										<p><img src="img/icons/phone_white.png" alt=""></p>
+										<p>+7 (495) 142 18 40 <span>Ждем Вашего звонка!</span></p>
+									</a>
+								</li>
+								<li>
+									<a href="tel:+74951421840">
+										<p><img src="img/icons/watsup.png" alt=""></p>
+										<p>+7 (495) 142 89 40<span>Мы в WhatsApp</span></p>
+									</a>
+								</li>
+							</ul>
+							<div class="footer_min-dev mob-xs-none">
+								<ul class="footer-list-2">
+									<li><a href="#">Акции и скидки</a></li>
+									<li><a href="#">Кальяны</a></li>
+									<li><a href="#">Табак</a></li>
+									<li><a href="#">Чаши</a></li>
+									<li class="mobile-vision"><a href="#">Колбы</a></li>
+								</ul>
+								<ul class="footer-list-3">
+									<li class="mobile-none"><a href="#">Колбы</a></li>
+									<li><a href="#">Уголь</a></li>
+									<li><a href="#">Аксессуары</a></li>
+									<li><a href="#">НАши магазины</a></li>
+									<li class="mobile-vision"><a href="#">Доставка и оплата</a></li>
+									<li class="mobile-vision"><a href="#">гарантии и возврат</a></li>
+								</ul>
+								<ul class="footer-list-4">
+									<li class="mobile-none"><a href="#">Доставка и оплата</a></li>
+									<li class="mobile-none"><a href="#">гарантии и возврат</a></li>
+									<li><a href="#">подарочные сертификаты</a></li>
+									<li><a href="#">Отзывы</a></li>
+									<li class="mobile-vision"><a href="#">политика конфиденциальности</a></li>
+									<li class="mobile-vision"><a href="#">условия продажи и оферты</a></li>
+									<li class="mobile-vision"><a href="#">карта сайта</a></li>
+								</ul>
+								<ul class="footer-list-5 mobile-none">
+									<li><a href="#">политика конфиденциальности</a></li>
+									<li><a href="#">условия продажи и оферты</a></li>
+									<li><a href="#">карта сайта</a></li>
+									<li><a href="#"></a></li>
+								</ul>
+							</div>
+							<div class="footer_xs-dev mob-xs-vision">
+								<ul>
+									<li><a href="#">Акции и скидки</a></li>
+									<li><a href="#">Кальяны</a></li>
+									<li><a href="#">Табак</a></li>
+									<li><a href="#">Чаши</a></li>
+									<li><a href="#">Колбы</a></li>
+									<li><a href="#">Уголь</a></li>
+									<li><a href="#">Аксессуары</a></li>
+									<li><a href="#">НАши магазины</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Доставка и оплата</a></li>
+									<li><a href="#">гарантии и возврат</a></li>
+									<li><a href="#">подарочные сертификаты</a></li>
+									<li><a href="#">Отзывы</a></li>
+									<li><a href="#">политика конфиденциальности</a></li>
+									<li><a href="#">условия продажи и оферты</a></li>
+									<li><a href="#">карта сайта</a></li>
+									<li><a href="#"></a></li>
+									
+								</ul>
+							</div>
+							<ul class="footer-list-6">
+								<li><a href="#">
+									<img src="img/icons/vk.png" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="img/icons/youtybe.png" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="img/icons/inst.png" alt="">
+								</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-bottom">
+						<ul>
+							<li>@2019 Nuahule Store MSk 18+</li>
+							<li>
+								<p>LTD Tutmee Web <span>development Agency</span></p>
+								<p><img src="img/icons/logo_tutmee.png" alt=""></p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- scripts -->
+	<script type="text/javascript" src="libs/jquery/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="libs/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="libs/OwlCarousel/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
