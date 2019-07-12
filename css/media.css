@@ -34,7 +34,7 @@ bottom: 100px;
 		bottom: -80px;
 	}
 	.text_video {
-bottom: 140px;
+bottom: 100px;
 	}
 	.transition {
 		top: -90px;
@@ -66,6 +66,9 @@ max-width: 265px;
 .product li:nth-of-type(4) p:nth-of-type(2) {
 	margin-right: 15px;
 }
+.group {
+	height: 763px;
+}
 }
 @media only screen and (max-width: 1510px) {
 	.transition {
@@ -88,6 +91,7 @@ max-width: 260px;
 }
 .footer-table .footer-list-1 {
 padding: 15px;
+}
 }
 @media only screen and (max-width: 1420px) {
 .header-top, .header-center, .header-bottom {
@@ -334,6 +338,23 @@ margin-top: 10px;
 	padding-left: 15px;
 	padding-right: 15px;
 }
+.name_container {
+	font-size: 52px;
+	line-height: 55px;
+}
+.header-center li:nth-of-type(4) a p, .header-center li:nth-of-type(5) a p {
+	font-size: 16px;
+}
+.header-center li:nth-of-type(4) a p span, .header-center li:nth-of-type(5) a p span {
+	font-size: 12px;
+}
+.product li:nth-of-type(3) {
+	height: 95px;
+}
+.ourMailing p:nth-of-type(1) {
+	font-size: 52px;
+line-height: 55px;
+}
 }
 @media only screen and (max-width: 1260px) {
 .footer-table .footer-list-1 li:nth-of-type(2) a p:nth-of-type(1), .footer-table .footer-list-1 li:nth-of-type(3) a p:nth-of-type(1) {
@@ -537,7 +558,8 @@ font-size: 12px;
 	width: 170%;
 }
 .text-slide {
-	font-size: 4.68vw;
+	font-size: 45px;
+line-height: 47px;
 }
 .item-buy {
 	max-width: 57vw; 
@@ -645,10 +667,11 @@ font-size: 12px;
 
 }
 .text_video span:nth-of-type(2) {
-	font-size: 1.45vw;
+	font-size: 14px;
+line-height: 22px;
 }
 .text_video a {
-	font-size: 1.66vw;
+	font-size: 14px;
 }
 .frame_all {
 	width: 500px;
@@ -669,7 +692,8 @@ font-size: 12px;
 	margin-bottom: 60px;
 }
 .ourMailing p:nth-of-type(1){
-	font-size: 4.67vw;
+	font-size: 45px;
+line-height: 47px;
 }
 .ourMailing p:nth-of-type(2) {
 	font-size: 14px;
@@ -703,6 +727,10 @@ font-size: 12px;
 .frame_about_us {
 	bottom: -15px;
 }
+.name_container {
+	font-size: 45px;
+line-height: 47px;
+} 
 }
 @media only screen and (max-width: 920px) {
 .carousel-2, .carousel-3 {
@@ -848,13 +876,13 @@ border-right: none;
 	top: 160px;
 }
 .group {
-	height: 635px;
+	height: 700px;
 }
 .logo_index {
 	left: 50%;
 	width: 29.56vw;
 	margin-left: -14.78vw;
-	top: 345px;
+	top: 395px;
 }
 .transition_two {
 	bottom: -40px;
@@ -946,13 +974,21 @@ border-right: none;
 	font-size: 19px;
 	padding-bottom: 20px;
 }
+.name_container {
+font-size: 45px;
+line-height: 47px;
+} 
+.about_us {
+	padding-bottom: 100px;
+}
 }
 @media only screen and (max-width: 700px) {
 .mobile-footer-img {
 	height: 360px;
 }
 .ourMailing p:nth-of-type(1) {
-	font-size: 26px;
+font-size: 28px;
+line-height: 29px;
 }
 }
 @media only screen and (max-width: 600px) {
@@ -1045,6 +1081,14 @@ border-bottom: none;
 .carousel-3 {
 	padding-bottom: 60px;	
 }
+.text_video {
+	max-width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.group {
+    height: 635px;
+} 
 }
 @media only screen and (max-width: 500px) {
 	.header-mob .header-mob-right a img {
@@ -1139,11 +1183,11 @@ flex-direction: column;
 	top: 130px;
 }
 .logo_index {
-	top: 245px;
+	top: 340px;
 	min-width: 141px;
 }
 .group {
-	height: 430px;
+	height: 580px;
 }
 .owl-carousel-1 .item .frame {
 	bottom: -19px;
@@ -1151,6 +1195,7 @@ flex-direction: column;
 .text-slide {
 	max-width: 300px;
 	margin: 0 auto;
+	line-height: 35px;
 }
 .transition {
 	top: -13px;
@@ -1172,6 +1217,13 @@ flex-direction: column;
 	padding-left: 15px;
 	padding-right: 15px;
 }
+.name_container {
+font-size: 28px;
+line-height: 29px;
+} 
+.about_us {
+	padding-bottom: 60px;
+} 
 }
 @media only screen and (max-width: 450px) {
 	.owl-carousel .owl-item .slide_first_img {
@@ -1182,6 +1234,12 @@ flex-direction: column;
 	bottom: -60px;
 	width: 300%;
 	left: -200px;
+}
+.logo_index {
+	top: 375px;
+}
+.group {
+    height: 610px;
 }
 }
 @media only screen and (max-width: 400px) {
@@ -1196,10 +1254,34 @@ flex-direction: column;
 	.owl-carousel .owl-item .slide_first_img {
 	width: 900px;
 }
+.ourMailing p:nth-of-type(1) {
+font-size: 23px;
+line-height: 24px;
+}
+.logo_index {
+	top: 390px;
+	margin-left: -19.78vw;
+}
+.group {
+    height: 630px;
+} 
+
+}
+@media only screen and (max-width: 340px){
+.logo_index {
+	top: 430px;
+	margin-left: -20vw;
+}
+.group {
+    height: 650px;
+} 
 }
 @media only screen and (max-width: 320px){
 .hidden-menu__tab {
 	width: 320px;
 	left: -320px;
+}
+.logo_index {
+	margin-left: -26vw;
 }
 }
