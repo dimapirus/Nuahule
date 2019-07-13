@@ -1,11 +1,15 @@
-.container-menu {position: relative;
+.container-menu {
+	position: relative;
 display: block;
 }
 /* Кнопки */
 .container-menu .button-menu {
 position: relative;
 }
-.container-menu .button-menu a{display: block;text-decoration: none;border-bottom: 1px dotted white}
+.container-menu .button-menu a{
+	display: block;
+	text-decoration: none;
+	border-bottom: 1px dotted white}
 /* Базовые стили слоя затемнения и модального окна  */
 .overlay-menu {
 top: 0;
@@ -27,22 +31,21 @@ opacity: 1;
 }
 /* стили модального окна */
 .popup-menu {
-top: -500px;
-left: 50%;
+display: none;
+margin: 0;
+left: 0;
+right: 0;
 font-size: 14px;
-font-family: 'Tahoma', Arial, sans-serif;
 z-index: 10000;
 margin: 0 auto;
-width: 100%;
-height: 300px;
+width: auto;
 /* фиксированное позиционирование, окно стабильно при прокрутке */
 position: fixed;
-padding: 15px;
 /* скругление углов */
 background-color: transparent;
 /* трансформация */
--webkit-transform: translate(-50%, -150%);
-transform: translate(-50%, -150%);
+/*-webkit-transform: translate(-50%, -150%);
+transform: translate(-50%, -150%);*/
 /* анимируем трансформацию */
 transition: -webkit-transform 0.6s ease-out;
 transition: transform 0.6s ease-out;
@@ -50,18 +53,19 @@ transition: transform 0.6s ease-out, -webkit-transform 0.6s ease-out;
 }
 /* активируем мод. окно */
 .overlay-menu:target+.popup-menu {
-top: 30%;
--webkit-transform: translate(-50%,-50%);
-transform: translate(-50%, -50%);
+display: block;
+top: 30px;
+/*-webkit-transform: translate(-50%,-50%);
+transform: translate(-50%, -50%);*/
 }
 /* формируем кнопку закрытия */
 .close-menu {
 position: absolute;
 padding: 0;
-top: 10px;
-right: 10px;
-width: 22px;
-height: 22px;
+top: 0px;
+right: -60px;
+width: 35px;
+height: 28px;
 border-radius: 50%;
 text-align: center;
 text-decoration: none;
@@ -70,26 +74,28 @@ line-height: 20px;
 transition: background-color ease .7s;
 }
 .close-menu:before {
-	position: relative;
-	top: 11px;
-	content: "";
-	display: block;
-	width: 20px;
-	height: 1px;
-background: #000;
+position: relative;
+top: 11px;
+content: "";
+display: block;
+width: 35px;
+height: 5px;
+border-radius: 4px;
+background: #FFFFFF;
 -webkit-transform: rotate(-45deg);
-        transform: rotate(-45deg);
+transform: rotate(-45deg);
 }
 .close-menu:after {
-	position: relative;
-	top: 10px;
-	content: "";
-	display: block;
-	width: 20px;
-	height: 1px;
-background: #000;
+position: relative;
+top: 6px;
+content: "";
+display: block;
+width: 35px;
+height: 5px;
+border-radius: 4px;
+background: #FFFFFF;
 -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
+transform: rotate(45deg);
 }
 .popup-menu p {
 margin: 0;
@@ -98,58 +104,284 @@ padding: 0;
 .popup-menu div {
 position: relative;
 margin: 0 auto;
-width: 562px;
+width: 670px;
 background: white;
 margin-bottom: 20px;
 }
 .popup-menu div .popup-menu__name {
-padding-top: 25px;
-margin: 0 auto 26px auto;
+padding: 30px 0;
+border-bottom: 1px solid #E5E5E5;
+font-family: MontserratSemiBold;
+font-size: 36px;
 text-align: center;
-font-size: 24px;
-}
-.popup-menu div p {
-font-family: MontserratRegular;
-font-weight: normal;
-font-style: normal;
-font-stretch: normal;
-letter-spacing: 0.6px;
-color: #000000;
-}
-.popup-menu div .input__name,
-.popup-menu div .input__number,
-.popup-menu div .input__city,
-.popup-menu div .input__email {
-	margin-bottom: 12px;
-	margin-left: auto;
-	margin-right: auto;
-	height: 40px;
-}
-.popup-menu div .input__name #name,
-.popup-menu div .input__number #number,
-.popup-menu div .input__city #city,
-.popup-menu div .input__email #email {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	padding-left: 15px;
-}
-.popup-menu div .input__textarea {
-	margin-left: auto;
-	margin-right: auto;
-	height: 95px;
-	margin-bottom: 13px;
-}
-.popup-menu div .input__textarea #comments {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	padding-top: 14px;
-	padding-left: 15px;
-}
-.popup-menu .poup-1 {
-	padding-bottom: 31px;
+color: #292929;
 }
 .popup-menu div {
 text-align: center
+}
+.form-popup {
+padding: 60px 0;
+}
+.form-popup form {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.popup-menu .email, .popup-menu .pasword {
+position: relative;
+width: 380px;
+height: 50px;
+background: #FFFFFF;
+border: 1px solid #B6B6B6;
+box-sizing: border-box;
+border-radius: 50px;
+overflow: hidden;
+margin-bottom: 30px;
+}
+.email input,
+.pasword input {
+width: 100%;
+height: 100%;
+padding: 0 35px;
+border: none;
+margin: 0;
+font-family: Montserrat;
+font-size: 16px;
+color: #000000;
+}
+.email span,
+.pasword span {
+color: red;
+
+}
+.email input:focus + label,
+.pasword input:focus + label {
+display: none;
+}
+.email label,
+.pasword label {
+display: inline-block;
+position: absolute;
+top:50%;
+margin-top: -11px;
+cursor: pointer;
+left: 35px;
+height: 22px;
+width: auto;
+font-family: Montserrat;
+font-size: 16px;
+color: #B6B6B6;
+}
+.remember_me {
+	display: flex;
+	justify-content: space-between;
+	max-width: 380px;
+}
+.check_all input[type=checkbox] {
+	display: none;
+}
+.check_all input[type=checkbox] + label:before {
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #B6B6B6;
+    height: 20px;
+    width: 20px;
+    margin-right: 12px;
+    transition: color ease .3s;
+}
+.check_all input[type=checkbox]:checked + label:before {
+    content:"";
+    border: 1px solid #00BB2E;
+    background: url(../img/icons/check.png);
+    background-size: 100%;
+}
+.popup-menu .remember_me .check_all label {
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: Montserrat;
+font-size: 14px;
+color: #292929;
+}
+.popup-menu .remember_me {
+	margin: 0; 
+	padding-bottom: 40px;
+}
+.remember_me .check_all{
+width: auto;
+margin: 0;
+}
+.remember_me a {
+	font-family: Montserrat;
+font-size: 18px;
+line-height: 22px;
+text-decoration-line: underline;
+color: #939393;
+}
+.btn-enter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 380px;
+	height: 54px;
+	background: #00BB2E;
+border-radius: 50px;
+font-family: MontserratBold;
+font-size: 18px;
+text-transform: uppercase;
+color: #FFFFFF;
+z-index: 4;
+}
+.btn-enter:hover {
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(0, 187, 46, 1);;
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 187, 46, 1);;
+    box-shadow: 2px 2px 5px 0px rgba(0, 187, 46, 1);;
+}
+.poup_img {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 3;
+}
+
+/*catalog filter*/
+.filter-tabs .popup-menu {
+	height: 100vh;
+	position: fixed;
+	overflow: auto;
+	left: -253px;
+	transition: ease 0.5s all;
+}
+.filter-tabs .overlay-menu:target+.popup-menu {
+	top: 0;
+	left: 0px;
+	right: auto;
+	width: 300px;
+}
+.filter-tabs .popup-menu div {
+	width: 100%;
+	margin-bottom: 0;
+}
+.filter-tabs .close-menu:before,
+.filter-tabs .close-menu:after {
+	background: #939393;
+	width: 24px;
+	height: 3px;
+}
+.filter-tabs .close-menu:after {
+	top: 8px;
+}
+.filter-tabs .close-menu {
+	position: fixed;
+top: 25px;
+right: auto;
+left: 245px;
+width: 24px;
+}
+
+
+
+@media only screen and (max-width: 1366px){
+.popup-menu div {
+width: 593px;	
+}
+.popup-menu div .popup-menu__name {
+	padding: 20px 0;
+}
+.form-popup {
+	padding: 40px 0;
+}
+.email label, .pasword label {
+	font-size: 14px;
+}
+.popup-menu .remember_me {
+	padding-bottom: 30px;
+}
+.btn-enter {
+	height: 44px;
+	font-size: 16px;
+}
+.poup_img {
+	right: -28px;
+}
+}
+@media only screen and (max-width: 960px){
+	.popup-menu div .popup-menu__name {
+		font-size: 26px;
+	}
+.remember_me a {
+	font-size: 16px;
+}
+.poup_img {
+	right: -30px;
+	bottom: -17px;
+} 
+}
+@media only screen and (max-width: 768px){
+.popup-menu div {
+	width: 552px;
+}
+.btn-enter {
+	font-size: 14px;
+}
+}
+@media only screen and (max-width: 700px){
+.popup-menu div {
+	width: 450px;
+}
+.popup-menu div .popup-menu__name {
+	font-size: 20px;
+	padding: 15px 0;
+}
+.popup-menu .email, .popup-menu .pasword,
+.popup-menu .remember_me, .btn-enter {
+	width: 300px;
+}
+.remember_me a {
+	font-size: 12px;
+}
+.popup-menu .remember_me .check_all label {
+	font-size: 12px;
+}
+.check_all input[type=checkbox] + label:before {
+	margin-right: 10px;
+}
+.close-menu {
+	top: 20px;
+	right: 20px;
+	width: 24px;
+	height: 20px;
+}
+.close-menu:before,
+.close-menu:after {
+	width: 24px;
+	background: #292929;
+	height: 2px;
+}
+.close-menu:before {
+	top: 8px;
+}
+.filter-tabs .close-menu:before {
+	top: 11px;
+}
+}
+@media only screen and (max-width: 500px){
+	.popup-menu {
+		padding: 0;
+	}
+	.popup-menu div {
+	width: 100%;
+} 
+.overlay-menu:target+.popup-menu {
+	top:0;
+}
+.filter-tabs .overlay-menu:target+.popup-menu {
+	width: 253px;
+}
+.filter-tabs .close-menu {
+	left: 210px;
+}
 }
