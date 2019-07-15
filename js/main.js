@@ -76,18 +76,30 @@ items:4
 }
 }
 })
-// раскрывающиеся блоки FIRST
-var menuElem = document.getElementById('sweeties');
-var titleElem = menuElem.querySelector('.title');
-titleElem.onclick = function() {
-menuElem.classList.toggle('open');
-};
-// раскрывающиеся блоки SECOND
-var menu1Elem = document.getElementById('sweeties1');
-var title1Elem = menu1Elem.querySelector('.title1');
-title1Elem.onclick = function() {
-menu1Elem.classList.toggle('open1');
-};
+// owl carousel-4
+$('.owl-carousel-4').owlCarousel({
+loop:true,
+margin:0,
+navContainer: ".navigation-4",
+dots:true,
+responsive:{
+0:{
+items:1
+},
+500:{
+items:2
+},
+600:{
+items:3
+},
+960:{
+items:4
+},
+1920:{
+items:4
+}
+}
+})
 // раскрывающиеся блоки THIRD
 function change_visibility (block_4_close, block_4_open) {
 document.getElementById(block_4_close).style.display='block';
@@ -201,3 +213,39 @@ dropBlock.slideUp();
 }
 return false;
 });
+// bxslider
+jQuery(document).ready(function(){
+jQuery('.bxslider').bxSlider({
+controls: false,
+pagerCustom: '#bx-pager'
+});
+});
+// padding у tab
+var p = document.getElementById('tab-content').clientHeight;
+var h = document.getElementById('tabs');
+h.style.paddingBottom = p + 30 + 'px';
+// счетчик товара
+var count = document.getElementById('count').innerHTML = 0;
+function func() {
+var plusButton = document.getElementsByClassName("button_plus");
+var minusButton = document.getElementsByClassName("button_minus");
+if (document.onclick = plusButton) {
+count++;
+count.innerHTML = count;
+} else if (document.onclick = minusButton) {
+count--;
+count.innerHTML = count;
+}
+};
+// раскрывающиеся блоки FIRST
+var menuElem = document.getElementById('sweeties');
+var titleElem = menuElem.querySelector('.title');
+titleElem.onclick = function() {
+menuElem.classList.toggle('open');
+};
+// раскрывающиеся блоки SECOND
+var menu1Elem = document.getElementById('sweeties1');
+var title1Elem = menu1Elem.querySelector('.title1');
+title1Elem.onclick = function() {
+menu1Elem.classList.toggle('open1');
+};
