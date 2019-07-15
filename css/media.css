@@ -646,6 +646,9 @@ display: none;
 .interesting {
 	max-width: 930px;
 }
+.no_request p, .no_request_btn p {
+	font-size: 20px;
+}
 }
 @media only screen and (max-width: 1070px) {
 .carousel-2, .carousel-3 {
@@ -752,6 +755,21 @@ display: none;
 	#tabs {
 		padding-right: 40px;
 		padding-left: 40px;
+	}
+	.ruler {
+		font-size: 14px;
+		max-width: 157px;
+		padding: 4px;
+	}
+	.tasty_link {
+		font-size: 12px;
+	}
+	.no_request_btn .btn-enter_tabcco {
+		max-width: 210px;
+		font-size: 12px;
+	}
+	.no_request p, .no_request_btn p {
+		max-width: 400px;
 	}
 }
 /* Medium Devices, Desktops */
@@ -1400,6 +1418,18 @@ line-height: 47px;
 	padding-left: 15px;
 	padding-right: 15px;
 }
+.no_request, .no_request_btn {
+	flex-direction: column;
+}
+.no_request p, .no_request_btn p {
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+.tab_taste .stepper .stepper__controls button,
+.tasty_plus{
+	width: 30px;
+	height: 30px;
+}
 }
 @media only screen and (max-width: 700px) {
 .mobile-footer-img {
@@ -1741,6 +1771,84 @@ color: #292929;
 #r-adress-good-3 {
 	display: block;
 }
+.card-info-two-tobacco div {
+	width: auto;
+}
+.card-info-two div:nth-of-type(2) .common-price {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	font-size: 12px;
+}
+.card-info-two div:nth-of-type(2) .common-price span {
+	font-size: 14px;
+}
+.card-info-two-tobacco {
+	max-width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	justify-content: center;
+}
+.card-info-tabacco {
+	padding: 0px 15px;
+}
+.card-info-tabacco ul {
+	padding: 0 ;
+}
+.card-info-two-tobacco .price-card span {
+	text-align: center;
+}
+.card-info-one-tabacco {
+	border-bottom: 1px solid #E5E5E5;
+}
+.card-info-two-tobacco div:nth-of-type(2) {
+	display: none;
+}
+.tab_taste .main_characteristics_name {
+	font-size: 14px;
+}
+.tab_taste .main_characteristics_name span {
+	font-size: 14px;
+}
+.tasty_link img {
+	width: 35px;
+	height: 35px;
+}
+.tasty_link a {
+	height: 20px;
+	width: 20px;
+	font-size: 12px;
+}
+.stikers div {
+	margin-right: 0;
+}
+.tab_taste li{
+	position: relative;
+	flex-direction: column;
+}
+.tab_taste li .order {
+	padding-top: 37px;
+	margin-left: auto;
+}
+.tasty_link span {
+	position: absolute;
+	top: 14px;
+	left: 74px;
+}
+.tasty_link a {
+	position: absolute;
+	top: 14px;
+	right: 0;
+}
+.tasty_link img {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -30px;
+	width: 60px;
+	height: 60px;
+}
 }
 @media only screen and (max-width: 540px) {
 	.products  {
@@ -1970,6 +2078,9 @@ line-height: 24px;
 }
 .slct {
 	width: 250px;
+}
+.slct_tab {
+	width: 100%;
 }
 }
 @media only screen and (max-width: 340px){

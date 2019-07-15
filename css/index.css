@@ -40,6 +40,13 @@ input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
+::-webkit-scrollbar { width: 3px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #939393;; }
+::-webkit-scrollbar-track {  background-color: #999;}
+::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #939393;; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #999;}}
+::-webkit-resizer { background-color: #939393;;}
 /*сетка*/
 .page {
 max-width: 1920px;
@@ -74,11 +81,14 @@ display: block;
 .padding_none {
 padding: 0;
 }
-padding_left_none {
+.padding_left_none {
 padding-left: 0;
 }
-padding_right_none {
+.padding_right_none {
 padding-right: 0;
+}
+body .none {
+	display: none;
 }
 /*Переменные*/
 /* Блоки */
@@ -1928,6 +1938,7 @@ font-size: 16px;
 box-sizing: border-box;
 color: #00BB2E;
 background: transparent;
+text-transform: uppercase;
 }
 .stepper [spinner-button="up"] {
 margin-bottom: -1px;
@@ -2180,4 +2191,120 @@ color: #B6B6B6;
 }
 .name-good-mob {
 	display: none;
+}
+.ruler {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	margin-top: 12px;
+	max-width: 189px;
+	width: 100%;
+	border: 2px solid #292929;
+box-sizing: border-box;
+border-radius: 3px;
+font-size: 18px;
+color: #B6B6B6;
+}
+.ruler span {
+	display: block;
+	margin-left: 12px;
+	font-family: MontserratBold;
+color: #292929;
+}
+.card-info-two div:nth-of-type(2) p {
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family: Montserrat;
+font-size: 14px;
+color: #292929;
+}
+.card-info-two div:nth-of-type(2) p span {
+	display: block;
+	margin-left: 8px;
+	font-family: MontserratBold;
+font-size: 18px;
+text-align: right;
+color: #292929;
+}
+.card-info-two-tobacco {
+	padding-top: 30px;
+}
+.tab_taste .main_characteristics_name {
+	padding-bottom: 21px;
+}
+.tab_taste .main_characteristics_name span {
+	font-family: MontserratBold;
+font-size: 18px;
+color: #B6B6B6;
+}
+.tab_taste li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px dotted #B6B6B6;
+	padding: 14px 0;
+}
+.tasty_link {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-family: Montserrat;
+font-size: 14px;
+color: #292929;
+}
+.tasty_link img {
+	margin-right: 12px;
+}
+.tasty_link a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	border: 1px solid #B6B6B6;
+box-sizing: border-box;
+color: #292929;
+font-size: 15px;
+margin-left: 10px;
+}
+.tasty_plus {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Montserrat;
+font-size: 16px;
+color: #00BB2E;
+border: 2px solid #00BB2E;
+box-sizing: border-box;
+border-radius: 50%;
+}
+.card-info .tab_taste ul {
+	height: 284px;
+	overflow-y: scroll;
+	overflow-x:hidden;  /*для горизонтального*/
+	padding: 0;
+	border-bottom: 1px dotted #B6B6B6;
+}
+.requests_tabacco {
+	flex-direction: column;
+}
+.no_request p, .no_request_btn p{
+	max-width: 629px;
+font-family: MontserratSemiBold;
+font-size: 24px;
+color: #292929;
+}
+.no_request_btn {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.btn-enter_tabcco {
+	max-width: 282px;
 }
