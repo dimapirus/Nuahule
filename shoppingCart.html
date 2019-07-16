@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Product Details Flask</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
+		<link rel="stylesheet" href="libs/jquery-ui-themes-1.12.1/jquery-ui.css">
+		<link rel="stylesheet" href="libs/OwlCarousel/dist/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="libs/OwlCarousel/dist/assets/owl.theme.default.min.css">
+		<link href="libs/bxslider/dist/jquery.bxslider.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/font.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/media.css">
+		<link rel="stylesheet" href="css/modal_window.css">
+	</head>
+	<body>
+		<div class="page">
+			<header>
+				<div class="container container-mob">
+					<div class="row">
+						<ul class="header-mob">
+							<li class="header-mob-left">
+								<div class="burger-menu__tab">
+									<input type="checkbox" id="hmt__tab" class="hidden-menu-ticker-tab">
+									<label class="btn-menu-tab" for="hmt__tab">
+										<span class="first-tab"></span>
+										<span class="second-tab"></span>
+										<span class="third-tab"></span>
+									</label>
+									<ul class="hidden-menu__tab">
+										<li class="mob-menu-first">
+											<img src="img/index/Logo.png" alt="" class="menu-mob-logo">
+											<form id="search-mob" action="" method="get">
+												<input id="search-input-mob" name="s" placeholder="Поиск" type="search">
+												<button id="search-btn-mob" type="submit">
+												<img src="img/icons/search.png" alt="">
+												</button>
+											</form>
+											<p>
+												<a href="#win2" class="btn-first">Вход</a>
+												<a href="#win4" class="btn-first">Регистрация</a>
+											</p>
+										</li>
+										<li class="mob-menu-second">
+											<a href="#">КАЛЬЯНЫ</a>
+											<a href="#">табак</a>
+											<a href="#">чаши</a>
+											<a href="#">угли</a>
+											<a href="#">колбы</a>
+											<a href="#">Аксессуары</a>
+											<a href="#">магазины <img src="img/icons/map-black.png" alt=""></a>
+										</li>
+										<li class="mob-menu-third">
+											<a href="#">Оплата и доставка</a>
+											<a href="#">Гарантии</a>
+											<a href="#">О магазине</a>
+											<a href="#">Помощь</a>
+										</li>
+										<li class="mob-menu-four">
+											<a href="#">
+												<p><img src="img/icons/phone.png" alt=""></p>
+												<p>+7 (495) 142 18 40 <span>Ждем Вашего звонка!</span></p>
+											</a>
+											<a href="#">
+												<p><img src="img/icons/watsup.png" alt=""></p>
+												<p>+7 (495) 142 18 40 <span>Мы в WhatsApp</span></p>
+											</a>
+										</li>
+										<li class="mob-menu-five">
+											<a href="#"><img src="img/icons/vk.png" alt=""></a>
+											<a href="#"><img src="img/icons/youtybe.png" alt=""></a>
+											<a href="#"><img src="img/icons/inst.png" alt=""></a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header-mob-logo">
+								<img src="img/index/Logo.png" alt="">
+								<p>Кальянные магазины <span>нового поколения</span></p>
+							</li>
+							<li class="header-mob-right">
+								<a href=""><img src="img/icons/favorites.png" alt=""></a>
+								<a href=""><img src="img/icons/cart.png" alt=""></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="container container-line container-none-mob">
+					<div class="row">
+						<ul class="header-top">
+							<li><a href="#" class="header_img">
+								<img src="img/icons/vk.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header_img">
+								<img src="img/icons/youtybe.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header_img">
+								<img src="img/icons/inst.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">Оплата и доставка</a>
+						</li>
+						<li>
+							<a href="#">Гарантии</a>
+						</li>
+						<li>
+							<a href="#">О магазине</a>
+						</li>
+						<li>
+							<a href="#">Помощь</a>
+						</li>
+						<li>
+							<a href="#win2">
+								<img class="hover_grey" src="img/icons/enter.png" alt="">
+							</a>
+							<a href="#win2">Вход</a>
+						</li>
+						<li>
+							<a href="#win4">
+								<img class="hover_grey" src="img/icons/registration.png" alt="">
+							</a>
+							<a href="#win4">
+								Регистрация
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container container-none-mob">
+				<div class="row">
+					<ul class="header-center">
+						<li>
+							<img src="img/index/Logo.png" alt="">
+						</li>
+						<li>Кальянные магазины нового поколения</li>
+						<li>
+							<form id='search' action="" method="get">
+								<input id="search-input" name="s" placeholder="Поиск" type="search">
+								<button id="search-btn" type="submit">
+								<img src="img/icons/search.png" alt="">
+								</button>
+							</form>
+						</li>
+						<li id="num-none">
+							<a href="tel:+74951421840">
+								<p><img src="img/icons/phone.png" alt=""></p>
+								<p>+7 (495) 142 18 40 <span>Ждем Вашего звонка!</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="tel:+74951421840">
+								<p><img src="img/icons/watsup.png" alt=""></p>
+								<p>+7 (495) 142 89 40<span>Мы в WhatsApp</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>
+									<img src="img/icons/favorites.png" alt="">
+								</span>
+								Моя подборка
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>
+									<img src="img/icons/cart.png" alt="">
+								</span>
+								Корзина
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container container-black container-none-mob">
+				<div class="row">
+					<ul class="header-bottom">
+						<li><a href="#">кальяны</a></li>
+						<li><a href="#">Табак</a></li>
+						<li><a href="#">чаши</a></li>
+						<li><a href="#">угли</a></li>
+						<li><a href="#">колбы</a></li>
+						<li><a href="#">аксессуары</a></li>
+						<li>
+							<a href="#">
+								<span>
+									<img src="img/icons/map.png" alt="">
+								</span>
+								магазины
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="shopping_cart">
+			<div class="container">
+				<div class="row">
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Главная</a>
+							<span class="breadcrumb__delimiter">></span>
+						</li>
+						<li>
+							Корзина
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="shopping_cart_tab">
+						<p class="name_cart">Корзина</p>
+						<ul class="cart_tab">
+							<li class="cart_tab_header">
+								<p>В вашей корзине <span>4 товара</span></p>
+								<a href="#">очистить корзину</a>
+							</li>
+							<li class="cart_good">
+								<ul>
+									<li>
+										<img src="img/hookan/hoob-apex-mini-c-1.png" alt="">
+									</li>
+									<li>
+										<p>Кальян Soft Smoke Lite <span>Бюджетный и компактный вариант на каждый день.</span></p>
+										<div class="order order_none">
+											<section>
+												<div class="stepper js-spinner">
+													<div class="stepper__controls">
+														<button type="button" spinner-button="down">-</button>
+														<input type="number" min="1" max="100" step="1" value="1" class="stepper__input" data-stepper-debounce="400">
+														<button type="button" spinner-button="up">+</button>
+													</div>
+												</div>
+											</section>
+										</div>
+									</li>
+									<li>
+										<p>4 900 р. <span>Цена за штуку</span></p>
+										<p class="tablet-vision">9 800 р. <span>Общая сумма</span></p>
+									</li>
+									<li>
+										<div class="order order_desctop">
+											<section>
+												<div class="stepper js-spinner">
+													<div class="stepper__controls">
+														<button type="button" spinner-button="down">-</button>
+														<input type="number" min="1" max="100" step="1" value="1" class="stepper__input" data-stepper-debounce="400">
+														<button type="button" spinner-button="up">+</button>
+													</div>
+												</div>
+											</section>
+										</div>
+									</li>
+									<li>
+										<p>9 800 р. <span>Общая сумма</span></p>
+									</li>
+									<li>
+										<a href="#"><img src="img/icons/heartCard.png" alt=""></a>
+										<a href="#"><img src="img/icons/clearGrey.png" alt=""></a>
+									</li>
+								</ul>
+							</li>
+							<li class="cart_good">
+								<ul>
+									<li>
+										<img src="img/hookan/hoob-apex-mini-c-2.png" alt="">
+									</li>
+									<li>
+										<p>Кальян Hoob Mars C <span>Стильный утонченный дизайн и только лучшие материалы.</span></p>
+										<div class="order order_none">
+											<section>
+												<div class="stepper js-spinner">
+													<div class="stepper__controls">
+														<button type="button" spinner-button="down">-</button>
+														<input type="number" min="1" max="100" step="1" value="1" class="stepper__input" data-stepper-debounce="400">
+														<button type="button" spinner-button="up">+</button>
+													</div>
+												</div>
+											</section>
+										</div>
+									</li>
+									<li>
+										<p>4 900 р. <span>Цена за штуку</span></p>
+										<p class="tablet-vision">9 800 р. <span>Общая сумма</span></p>
+									</li>
+									<li>
+										<div class="order order_desctop">
+											<section>
+												<div class="stepper js-spinner">
+													<div class="stepper__controls">
+														<button type="button" spinner-button="down">-</button>
+														<input type="number" min="1" max="100" step="1" value="1" class="stepper__input" data-stepper-debounce="400">
+														<button type="button" spinner-button="up">+</button>
+													</div>
+												</div>
+											</section>
+										</div>
+									</li>
+									<li>
+										<p>9 800 р. <span>Общая сумма</span></p>
+									</li>
+									<li>
+										<a href="#"><img src="img/icons/heartCard.png" alt=""></a>
+										<a href="#"><img src="img/icons/clearGrey.png" alt=""></a>
+									</li>
+								</ul>
+							</li>
+							<li class="cart_good">
+								<ul>
+									<li>
+										<img src="img/hookan/hoob-apex-mini-c-3.png" alt="">
+									</li>
+									<li>
+										<p>Кальян DSH Mini  <span>Бюджетный и компактный вариант на каждый день.</span></p>
+										<div class="order order_none">
+											<section>
+												<div class="stepper js-spinner">
+													<div class="stepper__controls">
+														<button type="button" spinner-button="down">-</button>
+														<input type="number" min="1" max="100" step="1" value="1" class="stepper__input" data-stepper-debounce="400">
+														<button type="button" spinner-button="up">+</button>
+													</div>
+												</div>
+											</section>
+										</div>
+									</li>
+									<li>
+										<p>4 900 р. <span>Цена за штуку</span></p>
+										<p class="tablet-vision">9 800 р. <span>Общая сумма</span></p>
+									</li>
+									<li>
+										<div class="order order_desctop">
+											<section>
+												<div class="stepper js-spinner">
+													<div class="stepper__controls">
+														<button type="button" spinner-button="down">-</button>
+														<input type="number" min="1" max="100" step="1" value="1" class="stepper__input" data-stepper-debounce="400">
+														<button type="button" spinner-button="up">+</button>
+													</div>
+												</div>
+											</section>
+										</div>
+									</li>
+									<li>
+										<p>9 800 р. <span>Общая сумма</span></p>
+									</li>
+									<li>
+										<a href="#"><img src="img/icons/heartCard.png" alt=""></a>
+										<a href="#"><img src="img/icons/clearGrey.png" alt=""></a>
+									</li>
+								</ul>
+							</li>
+							<li class="cart_good">
+								<ul>
+									<li>
+										<img src="img/hookan/hoob-apex-mini-c-4.png" alt="">
+									</li>
+									<li>
+										<p>Кальян Soft Smoke Elegant <span>Элегантный кальян полностью из нержавеющей стали.</span></p>
+										<div class="order order_none">
+											<section>
+												<div class="stepper js-spinner">
+													<div class="stepper__controls">
+														<button type="button" spinner-button="down">-</button>
+														<input type="number" min="1" max="100" step="1" value="1" class="stepper__input" data-stepper-debounce="400">
+														<button type="button" spinner-button="up">+</button>
+													</div>
+												</div>
+											</section>
+										</div>
+									</li>
+									<li>
+										<p>4 900 р. <span>Цена за штуку</span></p>
+										<p class="tablet-vision">9 800 р. <span>Общая сумма</span></p>
+									</li>
+									<li>
+										<div class="order order_desctop">
+											<section>
+												<div class="stepper js-spinner">
+													<div class="stepper__controls">
+														<button type="button" spinner-button="down">-</button>
+														<input type="number" min="1" max="100" step="1" value="1" class="stepper__input" data-stepper-debounce="400">
+														<button type="button" spinner-button="up">+</button>
+													</div>
+												</div>
+											</section>
+										</div>
+									</li>
+									<li>
+										<p>9 800 р. <span>Общая сумма</span></p>
+									</li>
+									<li>
+										<a href="#"><img src="img/icons/heartCard.png" alt=""></a>
+										<a href="#"><img src="img/icons/clearGrey.png" alt=""></a>
+									</li>
+								</ul>
+							</li>
+							<li  class="cart_tab_footer">
+								<ul class="cart_tab_footer_left">
+									<li>
+										<p>Промокод</p>
+										<p><img src="img/icons/check.png" alt="">Скидка по промокоду составит 15%</p>
+									</li>
+									<li>
+										<p>QDPOP167391</p>
+										<a href="#">Применить</a>
+									</li>
+								</ul>
+								<ul class="cart_tab_footer_right">
+									<li>
+										<p>Итого к оплате: <span>28 400 р.</span></p>
+									</li>
+									<li>
+										<a href="#" class="btn-enter btn-tab_footer">Оформить заказ</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<img id="footer-img" src="img/index/footer_top.png" alt="">
+				<div class="footer-top footer-top-catalog">
+					<div class="footer-table">
+						<ul class="footer-list-1">
+							<li>
+								<img src="img/index/Logo.png" alt="">
+							</li>
+							<li>
+								<a href="tel:+74951421840">
+									<p><img src="img/icons/phone_white.png" alt=""></p>
+									<p>+7 (495) 142 18 40 <span>Ждем Вашего звонка!</span></p>
+								</a>
+							</li>
+							<li>
+								<a href="tel:+74951421840">
+									<p><img src="img/icons/watsup.png" alt=""></p>
+									<p>+7 (495) 142 89 40<span>Мы в WhatsApp</span></p>
+								</a>
+							</li>
+						</ul>
+						<div class="footer_min-dev mob-xs-none">
+							<ul class="footer-list-2">
+								<li><a href="#">Акции и скидки</a></li>
+								<li><a href="#">Кальяны</a></li>
+								<li><a href="#">Табак</a></li>
+								<li><a href="#">Чаши</a></li>
+								<li class="mobile-vision"><a href="#">Колбы</a></li>
+							</ul>
+							<ul class="footer-list-3">
+								<li class="mobile-none"><a href="#">Колбы</a></li>
+								<li><a href="#">Уголь</a></li>
+								<li><a href="#">Аксессуары</a></li>
+								<li><a href="#">НАши магазины</a></li>
+								<li class="mobile-vision"><a href="#">Доставка и оплата</a></li>
+								<li class="mobile-vision"><a href="#">гарантии и возврат</a></li>
+							</ul>
+							<ul class="footer-list-4">
+								<li class="mobile-none"><a href="#">Доставка и оплата</a></li>
+								<li class="mobile-none"><a href="#">гарантии и возврат</a></li>
+								<li><a href="#">подарочные сертификаты</a></li>
+								<li><a href="#">Отзывы</a></li>
+								<li class="mobile-vision"><a href="#">политика конфиденциальности</a></li>
+								<li class="mobile-vision"><a href="#">условия продажи и оферты</a></li>
+								<li class="mobile-vision"><a href="#">карта сайта</a></li>
+							</ul>
+							<ul class="footer-list-5 mobile-none">
+								<li><a href="#">политика конфиденциальности</a></li>
+								<li><a href="#">условия продажи и оферты</a></li>
+								<li><a href="#">карта сайта</a></li>
+								<li><a href="#"></a></li>
+							</ul>
+						</div>
+						<div class="footer_xs-dev mob-xs-vision">
+							<ul>
+								<li><a href="#">Акции и скидки</a></li>
+								<li><a href="#">Кальяны</a></li>
+								<li><a href="#">Табак</a></li>
+								<li><a href="#">Чаши</a></li>
+								<li><a href="#">Колбы</a></li>
+								<li><a href="#">Уголь</a></li>
+								<li><a href="#">Аксессуары</a></li>
+								<li><a href="#">НАши магазины</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Доставка и оплата</a></li>
+								<li><a href="#">гарантии и возврат</a></li>
+								<li><a href="#">подарочные сертификаты</a></li>
+								<li><a href="#">Отзывы</a></li>
+								<li><a href="#">политика конфиденциальности</a></li>
+								<li><a href="#">условия продажи и оферты</a></li>
+								<li><a href="#">карта сайта</a></li>
+								<li><a href="#"></a></li>
+								
+							</ul>
+						</div>
+						<ul class="footer-list-6">
+							<li><a href="#">
+								<img src="img/icons/vk.png" alt="">
+							</a></li>
+							<li><a href="#">
+								<img src="img/icons/youtybe.png" alt="">
+							</a></li>
+							<li><a href="#">
+								<img src="img/icons/inst.png" alt="">
+							</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<ul>
+						<li>@2019 Nuahule Store MSk 18+</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal-windows-all">
+		<div class="container-menu">
+			<!-- Модальное окно ВХОД -->
+			<a href="#x" class="overlay-menu" id="win2"></a>
+			<div class="popup-menu">
+				<div class="poup-1">
+					<p class="popup-menu__name">вход</p>
+					<div class="form-popup">
+						<form action="#" method="post">
+							<p class="common-input email">
+								<input type="text" id="input" >
+								<label for="input">E-mail<span>*</span></label>
+							</p>
+							<p class="common-input pasword">
+								<input type="password" id="input" >
+								<label for="input">Пароль<span>*</span></label>
+							</p>
+							<div class="remember_me">
+								<div class="check_all">
+									<input type="checkbox" id="checkModal1" name="checkModal1" />
+									<label for="checkModal1">Запомнить меня</a></label>
+								</div>
+								<a href="#">Забыли пароль?</a>
+							</div>
+							<a href="#" class="btn-enter">Войти</a>
+						</form>
+					</div>
+					<a class="close-menu" title="Закрыть" href="#close"></a>
+					<img src="img/icons/poupImg.png" alt="" class="poup_img">
+				</div>
+			</div>
+		</div>
+		<div class="container-menu">
+			<!-- Модальное окно РЕГИСТРАЦИЯ -->
+			<a href="#x" class="overlay-menu" id="win4"></a>
+			<div class="popup-menu popup-menu-registraition">
+				<div class="poup-1">
+					<p class="popup-menu__name">Регистрация</p>
+					<div class="form-popup">
+						<form action="#" method="post">
+							<p class="common-input name">
+								<input type="text" id="input" >
+								<label for="input">Имя<span>*</span></label>
+							</p>
+							<p class="common-input surname">
+								<input type="text" id="input" >
+								<label for="input">Фамилия<span>*</span></label>
+							</p>
+							<p class="common-input number">
+								<input type="number" id="input" >
+								<label for="input">Телефон<span>*</span></label>
+							</p>
+							<p class="common-input email">
+								<input type="text" id="input" >
+								<label for="input">E-mail<span>*</span></label>
+							</p>
+							<div class="date">
+								<p class="date_bird">Дата рождения</p>
+								<div class="date_all">
+									<div class="select">
+										<img src="img/icons/arrowFilter.png" alt="" class="img_select">
+										<a href="javascript:void(0);" class="slct">01</a>
+										<ul class="drop">
+											<li><a href="javascript:void(0)">01</a></li>
+											<li><a href="javascript:void(0)">02</a></li>
+											<li><a href="javascript:void(0)">03</a></li>
+											<li><a href="javascript:void(0)">04</a></li>
+											<li><a href="javascript:void(0)">05</a></li>
+											<li><a href="javascript:void(0)">06</a></li>
+											<li><a href="javascript:void(0)">07</a></li>
+											<li><a href="javascript:void(0)">08</a></li>
+											<li><a href="javascript:void(0)">09</a></li>
+											<li><a href="javascript:void(0)">10</a></li>
+											<li><a href="javascript:void(0)">11</a></li>
+											<li><a href="javascript:void(0)">12</a></li>
+										</ul>
+										<input type="hidden" id="select" />
+									</div>
+									<div class="select">
+										<img src="img/icons/arrowFilter.png" alt="" class="img_select">
+										<a href="javascript:void(0);" class="slct">янв.</a>
+										<ul class="drop">
+											<li><a href="javascript:void(0)">янв.</a></li>
+											<li><a href="javascript:void(0)">фев.</a></li>
+											<li><a href="javascript:void(0)">март</a></li>
+											<li><a href="javascript:void(0)">апр.</a></li>
+											<li><a href="javascript:void(0)">май</a></li>
+											<li><a href="javascript:void(0)">июнь</a></li>
+										</ul>
+										<input type="hidden" id="select" />
+									</div>
+									<div class="select">
+										<img src="img/icons/arrowFilter.png" alt="" class="img_select">
+										<a href="javascript:void(0);" class="slct">1865</a>
+										<ul class="drop">
+											<li><a href="javascript:void(0)">1865</a></li>
+											<li><a href="javascript:void(0)">1865</a></li>
+											<li><a href="javascript:void(0)">1865</a></li>
+											<li><a href="javascript:void(0)">1865</a></li>
+											<li><a href="javascript:void(0)">1865</a></li>
+											<li><a href="javascript:void(0)">1865</a></li>
+											<li><a href="javascript:void(0)">1865</a></li>
+											<li><a href="javascript:void(0)">1865</a></li>
+											<li><a href="javascript:void(0)">1865</a></li>
+										</ul>
+										<input type="hidden" id="select" />
+									</div>
+								</div>
+							</div>
+							<p class="common-input password">
+								<input type="number" id="input" >
+								<label for="input">Пароль<span>*</span></label>
+							</p>
+							<p class="common-input confirm_password">
+								<input type="number" id="input" >
+								<label for="input">Повторите пароль<span>*</span></label>
+							</p>
+							<a href="#" class="btn-enter">Зарегистрироваться</a>
+						</form>
+					</div>
+					<a class="close-menu" title="Закрыть" href="#close"></a>
+					<img src="img/icons/poupImg.png" alt="" class="poup_img">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- scripts -->
+<script type="text/javascript" src="libs/jquery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="libs/jquery-ui/jquery-ui.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="libs/OwlCarousel/dist/owl.carousel.min.js"></script>
+<script src="libs/bxslider/dist/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="js/stepper.min.js"></script>
+<script src="js/tabs.js"></script>
+</body>
+</html>
