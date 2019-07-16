@@ -217,214 +217,218 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="shopping_cart_tab">
-						<p class="name_cart">Корзина</p>
-						<ul class="cart_tab">
-							<li class="cart_tab_header">
-								<p>В вашей корзине <span>4 товара</span></p>
-								<a href="#">очистить корзину</a>
-							</li>
-							<li class="cart_good">
-								<ul>
-									<li>
-										<img src="img/hookan/hoob-apex-mini-c-1.png" alt="">
-									</li>
-									<li>
-										<p>Кальян Soft Smoke Lite <span>Бюджетный и компактный вариант на каждый день.</span></p>
-										<div class="order order_none">
-											<section>
-												<div class="stepper js-spinner">
-													<div class="stepper__controls">
-														<button type="button" spinner-button="down">-</button>
-														<input type="number" min="1" max="100" step="1" value="1" class="stepper__input" data-stepper-debounce="400">
-														<button type="button" spinner-button="up">+</button>
-													</div>
+					<p class="name_checkout">Оформление заказа</p>
+					<div class="checkout">
+						<div class="main_checkout">
+							<ul class="checkout_first">
+								<li class="checkout_header checkout_ok">
+									<p class="checkout_header_content"><span>1</span>Ваши данные</p>
+									<p class="checkout_ok_content"><span><img src="img/icons/check.png" alt=""></span>Ваши данные</p>
+								</li>
+								<li class="checkout_content">
+									<p>
+										<span>Имя<span>*</span></span>
+										<input type="text">
+									</p>
+									<p>
+										<span>Фамилия<span>*</span></span>
+										<input type="text">
+									</p>
+									<p>
+										<span>Телефон<span>*</span></span>
+										<input type="number">
+									</p>
+									<p>
+										<span>E-mail<span>*</span></span>
+										<input type="text">
+									</p>
+								</li>
+							</ul>
+							<ul class="checkout_second">
+								<li class="checkout_header">
+									<p class="checkout_header_content"><span>2</span>Доставка</p>
+									<p class="checkout_ok_content"><span><img src="img/icons/check.png" alt=""></span>Ваши данные</p>
+								</li>
+								<li class="checkout_content">
+									<ul class="delivery">
+										<li>
+											<div id="r0">
+												<a href="javascript:change_visibility ('r1', 'r0')" class="link_r0">
+													<p class="circle"></p>
+													<p class="delivery_text">Самовывоз Москва<span>Забрать в фирменном магазине</span></p>
+													<img src="img/index/Logo.png" alt="">
+												</a>
+											</div>
+											<div id="r1" style="display:none">
+												<a href="javascript: – vp_arth" onClick="change_visibility ('r0', 'r1')" class="link_r1">
+													<p class="circle circle_active"><span></span></p>
+													<p class="delivery_text">Самовывоз Москва<span>Забрать в фирменном магазине</span></p>
+													<img src="img/index/Logo.png" alt="">
+												</a>
+											</div>
+										</li>
+										<li>
+											<div id="r2">
+												<a href="javascript:change_visibility ('r3', 'r2')" class="link_r0">
+													<p class="circle"></p>
+													<p class="delivery_text">Курьерская доставка по Москве<span>от 151 рублей</span></p>
+													<img src="img/index/Logo.png" alt="">
+												</a>
+											</div>
+											<div id="r3" style="display:none">
+												<a href="javascript: – vp_arth" onClick="change_visibility ('r2', 'r3')" class="link_r1">
+													<p class="circle circle_active"><span></span></p>
+													<p class="delivery_text">Курьерская доставка по Москве<span>от 151 рублей</span></p>
+													<img src="img/index/Logo.png" alt="">
+												</a>
+											</div>
+										</li>
+										<li>
+											<div id="r4">
+												<a href="javascript:change_visibility ('r5', 'r4')" class="link_r0 link_r5">
+													<p class="circle"></p>
+													<p class="delivery_text">CDEK курьер<span>от 120 рублей</span></p>
+													<p class="delivery_text_two">11 рабочих дней<span>Стоимость: <span>2 234 Р.</span></span></p>
+													<img src="img/index/cdek.png" alt="">
+												</a>
+											</div>
+											<div id="r5" style="display:none">
+												<a href="javascript: – vp_arth" onClick="change_visibility ('r4', 'r5')" class="link_r1 link_r5">
+													<p class="circle circle_active"><span></span></p>
+													<p class="delivery_text">CDEK курьер<span>от 120 рублей</span></p>
+													<p class="delivery_text_two">11 рабочих дней<span>Стоимость: <span>2 234 Р.</span></span></p>
+													<img src="img/index/cdek.png" alt="">
+												</a>
+											</div>
+										</li>
+										<li>
+											<div id="r6">
+												<a href="javascript:change_visibility ('r7', 'r6')" class="link_r0">
+													<p class="circle"></p>
+													<p class="delivery_text">CDEK самовывоз<span>от 120 рублей</span></p>
+													<img src="img/index/cdek.png" alt="">
+												</a>
+											</div>
+											<div id="r7" style="display:none">
+												<a href="javascript: – vp_arth" onClick="change_visibility ('r6', 'r7')" class="link_r1">
+													<p class="circle circle_active"><span></span></p>
+													<p class="delivery_text">CDEK самовывоз<span>от 120 рублей</span></p>
+													<img src="img/index/cdek.png" alt="">
+												</a>
+											</div>
+										</li>
+										<li class="form_checkout">
+											<p class="name_form_checkout">Адрес доставки</p>
+											<form action="#" method="post">
+												<div class="select select_checkout">
+													<img src="img/icons/arrowFilter.png" alt="" class="arrow_checkout">
+													<a href="javascript:void(0);" class="slct">Область</a>
+													<ul class="drop">
+														<li><a href="javascript:void(0)">Область 1</a></li>
+														<li><a href="javascript:void(0)">Область 2</a></li>
+														<li><a href="javascript:void(0)">Область 3</a></li>
+														<li><a href="javascript:void(0)">Область 4</a></li>
+													</ul>
+													<input type="hidden" id="select" />
 												</div>
-											</section>
-										</div>
-									</li>
-									<li>
-										<p>4 900 р. <span>Цена за штуку</span></p>
-										<p class="tablet-vision">9 800 р. <span>Общая сумма</span></p>
-									</li>
-									<li>
-										<div class="order order_desctop">
-											<section>
-												<div class="stepper js-spinner">
-													<div class="stepper__controls">
-														<button type="button" spinner-button="down">-</button>
-														<input type="number" min="1" max="100" step="1" value="1" class="stepper__input" data-stepper-debounce="400">
-														<button type="button" spinner-button="up">+</button>
-													</div>
-												</div>
-											</section>
-										</div>
-									</li>
-									<li>
-										<p>9 800 р. <span>Общая сумма</span></p>
-									</li>
-									<li>
-										<a href="#"><img src="img/icons/heartCard.png" alt=""></a>
-										<a href="#"><img src="img/icons/clearGrey.png" alt=""></a>
-									</li>
-								</ul>
-							</li>
-							<li class="cart_good">
-								<ul>
-									<li>
-										<img src="img/hookan/hoob-apex-mini-c-2.png" alt="">
-									</li>
-									<li>
-										<p>Кальян Hoob Mars C <span>Стильный утонченный дизайн и только лучшие материалы.</span></p>
-										<div class="order order_none">
-											<section>
-												<div class="stepper js-spinner">
-													<div class="stepper__controls">
-														<button type="button" spinner-button="down">-</button>
-														<input type="number" min="1" max="100" step="1" value="1" class="stepper__input" data-stepper-debounce="400">
-														<button type="button" spinner-button="up">+</button>
-													</div>
-												</div>
-											</section>
-										</div>
-									</li>
-									<li>
-										<p>4 900 р. <span>Цена за штуку</span></p>
-										<p class="tablet-vision">9 800 р. <span>Общая сумма</span></p>
-									</li>
-									<li>
-										<div class="order order_desctop">
-											<section>
-												<div class="stepper js-spinner">
-													<div class="stepper__controls">
-														<button type="button" spinner-button="down">-</button>
-														<input type="number" min="1" max="100" step="1" value="1" class="stepper__input" data-stepper-debounce="400">
-														<button type="button" spinner-button="up">+</button>
-													</div>
-												</div>
-											</section>
-										</div>
-									</li>
-									<li>
-										<p>9 800 р. <span>Общая сумма</span></p>
-									</li>
-									<li>
-										<a href="#"><img src="img/icons/heartCard.png" alt=""></a>
-										<a href="#"><img src="img/icons/clearGrey.png" alt=""></a>
-									</li>
-								</ul>
-							</li>
-							<li class="cart_good">
-								<ul>
-									<li>
-										<img src="img/hookan/hoob-apex-mini-c-3.png" alt="">
-									</li>
-									<li>
-										<p>Кальян DSH Mini  <span>Бюджетный и компактный вариант на каждый день.</span></p>
-										<div class="order order_none">
-											<section>
-												<div class="stepper js-spinner">
-													<div class="stepper__controls">
-														<button type="button" spinner-button="down">-</button>
-														<input type="number" min="1" max="100" step="1" value="1" class="stepper__input" data-stepper-debounce="400">
-														<button type="button" spinner-button="up">+</button>
-													</div>
-												</div>
-											</section>
-										</div>
-									</li>
-									<li>
-										<p>4 900 р. <span>Цена за штуку</span></p>
-										<p class="tablet-vision">9 800 р. <span>Общая сумма</span></p>
-									</li>
-									<li>
-										<div class="order order_desctop">
-											<section>
-												<div class="stepper js-spinner">
-													<div class="stepper__controls">
-														<button type="button" spinner-button="down">-</button>
-														<input type="number" min="1" max="100" step="1" value="1" class="stepper__input" data-stepper-debounce="400">
-														<button type="button" spinner-button="up">+</button>
-													</div>
-												</div>
-											</section>
-										</div>
-									</li>
-									<li>
-										<p>9 800 р. <span>Общая сумма</span></p>
-									</li>
-									<li>
-										<a href="#"><img src="img/icons/heartCard.png" alt=""></a>
-										<a href="#"><img src="img/icons/clearGrey.png" alt=""></a>
-									</li>
-								</ul>
-							</li>
-							<li class="cart_good">
-								<ul>
-									<li>
-										<img src="img/hookan/hoob-apex-mini-c-4.png" alt="">
-									</li>
-									<li>
-										<p>Кальян Soft Smoke Elegant <span>Элегантный кальян полностью из нержавеющей стали.</span></p>
-										<div class="order order_none">
-											<section>
-												<div class="stepper js-spinner">
-													<div class="stepper__controls">
-														<button type="button" spinner-button="down">-</button>
-														<input type="number" min="1" max="100" step="1" value="1" class="stepper__input" data-stepper-debounce="400">
-														<button type="button" spinner-button="up">+</button>
-													</div>
-												</div>
-											</section>
-										</div>
-									</li>
-									<li>
-										<p>4 900 р. <span>Цена за штуку</span></p>
-										<p class="tablet-vision">9 800 р. <span>Общая сумма</span></p>
-									</li>
-									<li>
-										<div class="order order_desctop">
-											<section>
-												<div class="stepper js-spinner">
-													<div class="stepper__controls">
-														<button type="button" spinner-button="down">-</button>
-														<input type="number" min="1" max="100" step="1" value="1" class="stepper__input" data-stepper-debounce="400">
-														<button type="button" spinner-button="up">+</button>
-													</div>
-												</div>
-											</section>
-										</div>
-									</li>
-									<li>
-										<p>9 800 р. <span>Общая сумма</span></p>
-									</li>
-									<li>
-										<a href="#"><img src="img/icons/heartCard.png" alt=""></a>
-										<a href="#"><img src="img/icons/clearGrey.png" alt=""></a>
-									</li>
-								</ul>
-							</li>
-							<li  class="cart_tab_footer">
-								<ul class="cart_tab_footer_left">
-									<li>
-										<p>Промокод</p>
-										<p><img src="img/icons/check.png" alt="">Скидка по промокоду составит 15%</p>
-									</li>
-									<li>
-										<p>QDPOP167391</p>
-										<a href="#">Применить</a>
-									</li>
-								</ul>
-								<ul class="cart_tab_footer_right">
-									<li>
-										<p>Итого к оплате: <span>28 400 р.</span></p>
-									</li>
-									<li>
-										<a href="#" class="btn-enter btn-tab_footer">Оформить заказ</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
+												<p class="common-input name">
+													<input type="text" id="input" >
+													<label for="input">Город<span>*</span></label>
+												</p>
+												<p class="common-input surname">
+													<input type="text" id="input" >
+													<label for="input">Индекс<span>*</span></label>
+												</p>
+												<p class="common-input number">
+													<input type="number" id="input" >
+													<label for="input">Улица, переулок или проспект<span>*</span></label>
+												</p>
+												<p class="common-input email">
+													<input type="text" id="input" >
+													<label for="input">Дом<span>*</span></label>
+												</p>
+												<p class="common-input email">
+													<input type="text" id="input" >
+													<label for="input">Квартира/Офис<span>*</span></label>
+												</p>
+											</form>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="checkout_third">
+								<li class="checkout_header">
+									<p class="checkout_header_content"><span>3</span>Оплата</p>
+									<p class="checkout_ok_content"><span><img src="img/icons/check.png" alt=""></span>Ваши данные</p>
+								</li>
+								<li class="checkout_content">
+									<div id="r8">
+										<a href="javascript:change_visibility ('r9', 'r8')" class="link_r0">
+											<p class="circle"></p>
+											<p class="delivery_text">Наличные при получении</p>
+										</a>
+									</div>
+									<div id="r9" style="display:none">
+										<a href="javascript: – vp_arth" onClick="change_visibility ('r8', 'r9')" class="link_r1">
+											<p class="circle circle_active"><span></span></p>
+											<p class="delivery_text">Наличные при получении</p>
+										</a>
+									</div>
+									<div id="r10">
+										<a href="javascript:change_visibility ('r11', 'r10')" class="link_r0">
+											<p class="circle"></p>
+											<p class="delivery_text">Онлайн оплата банковской картой</p>
+										</a>
+									</div>
+									<div id="r11" style="display:none">
+										<a href="javascript: – vp_arth" onClick="change_visibility ('r10', 'r11')" class="link_r1">
+											<p class="circle circle_active"><span></span></p>
+											<p class="delivery_text">Онлайн оплата банковской картой</p>
+										</a>
+									</div>
+									<div id="r12">
+										<a href="javascript:change_visibility ('r13', 'r12')" class="link_r0">
+											<p class="circle"></p>
+											<p class="delivery_text">Онлайн оплата банковской картой</p>
+										</a>
+									</div>
+									<div id="r13" style="display:none">
+										<a href="javascript: – vp_arth" onClick="change_visibility ('r12', 'r13')" class="link_r1">
+											<p class="circle circle_active"><span></span></p>
+											<p class="delivery_text">Онлайн оплата банковской картой</p>
+										</a>
+									</div>
+								</li>
+								<li>
+								</li>
+							</ul>
+							<ul class="checkout_footer">
+								<li>Нажимая на кнопку, вы подтверждаете своё совершеннолетие, соглашаетесь на обработку персональных данных в соответсвии с <a href="#">Условиями</a>, а также с <a href="#">Условиями продажи.</a></li>
+								<li><a href="#">подтвердить заказ</a></li>
+							</ul>
+						</div>
+						<div class="left_checkout">
+							<ul class="your_order">
+								<li>
+									<div>
+									<p>Ваш заказ</p>
+									<a href="#">Изменить</a>
+									</div>
+								</li>
+								<li>
+									<p>Товары:<span>2 560 Р.</span></p>
+									<p>Скидка:<span class="red_text">-426 Р.</span></p>
+									<p>Доставка:<span class="grey_text">Не выбрана</span></p>
+								</li>
+								<li>
+									<p>Итого:<span>2 134 Р.</span></p>
+								</li>
+							</ul>
+						</div>
+						<ul class="checkout_footer checkout_footer_none">
+								<li>Нажимая на кнопку, вы подтверждаете своё совершеннолетие, соглашаетесь на обработку персональных данных в соответсвии с <a href="#">Условиями</a>, а также с <a href="#">Условиями продажи.</a></li>
+								<li><a href="#">подтвердить заказ</a></li>
+							</ul>
 					</div>
 				</div>
 			</div>
