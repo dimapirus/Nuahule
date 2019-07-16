@@ -771,6 +771,11 @@ display: none;
 	.no_request p, .no_request_btn p {
 		max-width: 400px;
 	}
+	.card-img-embers #bx-pager {
+		max-width: 128px;
+		width: auto;
+		max-height: 128px;
+	}
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 960px) {
@@ -1805,6 +1810,12 @@ color: #292929;
 .card-info-two-tobacco div:nth-of-type(2) {
 	display: none;
 }
+.card-info-tabacco .card-info-two-tobacco .order-embers {
+	display: block;
+}
+.card-info-two-tobacco {
+	justify-content: space-between;
+}
 .tab_taste .main_characteristics_name {
 	font-size: 14px;
 }
@@ -1848,6 +1859,10 @@ color: #292929;
 	margin-top: -30px;
 	width: 60px;
 	height: 60px;
+}
+.card-img-embers #bx-pager {
+	max-width: 50px;
+	width: 50px;
 }
 }
 @media only screen and (max-width: 540px) {

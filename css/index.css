@@ -1451,9 +1451,10 @@ border: none;
 border: none;
 }
 .catalog-body input[type=checkbox], input[type=radio] {display: none;}
-.catalog-body input[type=checkbox] + label:before,
-.checkbox_content input[type=checkbox], input[type=radio] {display: none;}
-.checkbox_content input[type=checkbox] + label:before {
+.catalog-body input[type=checkbox] + label:before, .catalog-body input[type=radio] + label:before,
+.checkbox_content input[type=checkbox], .checkbox_content input[type=radio] {display: none;}
+.checkbox_content input[type=checkbox] + label:before,
+.checkbox_content input[type=radio] + label:before {
 position: absolute;
 left: 0;
 top: 50%;
@@ -1472,39 +1473,22 @@ transition: color ease .3s;
 box-sizing: border-box;
 }
 .catalog-body input[type=checkbox]:hover + label:before,
-.checkbox_content input[type=checkbox]:hover + label:before {
+.checkbox_content input[type=checkbox]:hover + label:before,
+.catalog-body input[type=radio]:hover + label:before,
+.checkbox_content input[type=radio]:hover + label:before {
 border: 1px solid #00BB2E;
 background: #00BB2E;
 }
 .catalog-body input[type=checkbox]:checked + label:before,
-.checkbox_content input[type=checkbox]:checked + label:before {
+.checkbox_content input[type=checkbox]:checked + label:before,
+.catalog-body input[type=radio]:checked + label:before,
+.checkbox_content input[type=radio]:checked + label:before {
 border: 1px solid #00BB2E;
 background-color: #00BB2E;
 background-image: url(../img/icons/checkWhite.png);
 background-repeat: no-repeat;
 background-size: 12px;
 background-position: center;
-}
-.catalog-body input[type=radio] + label:before,
-.checkbox_content input[type=radio] + label:before {
-content: "\26AB";
-border: 1px solid #000;
-border-radius: 50%;
-display: inline-block;
-border: 1px solid #000;
-font-size: 20px;
-line-height: 20px;
-height: 20px;
-width: 20px;
-margin-right: 12px;
-text-align: center;
-vertical-align: middle;
-font-size: 0;
-transition: ease .3s all
-}
-.catalog-body input[type=radio]:checked + label:before,
-.checkbox_content input[type=radio]:checked + label:before {
-font-size: 20px;
 }
 .checkbox_content {
 padding-bottom: 18px;
@@ -2308,3 +2292,71 @@ color: #292929;
 .btn-enter_tabcco {
 	max-width: 282px;
 }
+.radio_embers {
+	display: flex;
+	padding-bottom: 10px;
+	border: none;
+}
+.radio_embers input[type=radio]:checked + label:before{
+width: 54px;
+height: 54px;
+border: 3px solid #E5E5E5;
+box-sizing: border-box;
+background: none;
+border: 3px solid #00BB2E;
+box-sizing: border-box;
+top: 0;
+}
+.radio_embers input[type=radio] + label:before {
+	width: 54px;
+height: 54px;
+border: 3px solid #E5E5E5;
+box-sizing: border-box;
+top: 0;
+}
+.radio_embers div {
+	position: relative;
+	width: 54px;
+	height: 54px;
+	margin-right: 30px;
+	padding-top: 24px;
+}
+.radio_embers div label {
+	position: absolute;
+	padding-top: 7px;
+	padding-left: 19px;
+	font-family: Montserrat;
+font-size: 15px;
+color: #292929;
+}
+.card-img-embers #bx-pager {
+	max-width: 196px;
+}
+.card-img-embers .bxslider li img {
+	margin: 0 auto; 
+}
+.card-img-embers .slider-card {
+	padding-bottom: 60px;
+}
+.card-info-href-one {
+	display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
