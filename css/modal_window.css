@@ -1,5 +1,5 @@
 .container-menu {
-	position: relative;
+position: relative;
 display: block;
 }
 /* Кнопки */
@@ -7,9 +7,9 @@ display: block;
 position: relative;
 }
 .container-menu .button-menu a{
-	display: block;
-	text-decoration: none;
-	border-bottom: 1px dotted white}
+display: block;
+text-decoration: none;
+border-bottom: 1px dotted white}
 /* Базовые стили слоя затемнения и модального окна  */
 .overlay-menu {
 top: 0;
@@ -128,19 +128,19 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 }
-
 .popup-menu .common-input {
 position: relative;
 width: 380px;
 height: 50px;
 background: #FFFFFF;
 border: 1px solid #B6B6B6;
+overflow: hidden;
 box-sizing: border-box;
 border-radius: 50px;
-overflow: hidden;
 margin-bottom: 30px;
 }
 .popup-menu .common-input input {
+position: relative;
 width: 100%;
 height: 100%;
 padding: 0 35px;
@@ -150,18 +150,13 @@ font-family: Montserrat;
 font-size: 16px;
 color: #000000;
 }
-.popup-menu .common-input span {
-color: red;
-
-}
-.popup-menu .common-input input:focus + label {
-display: none;
-}
-.popup-menu .common-input label {
-display: inline-block;
-position: absolute;
+.popup-menu .common-input .placeholder,
+.popup-menu .surname .placeholder {
+position:absolute;
+transform:translateY(-50%);
+pointer-events:none;
 top:50%;
-margin-top: -11px;
+margin-top: -4px;
 cursor: pointer;
 left: 35px;
 height: 22px;
@@ -170,30 +165,38 @@ font-family: Montserrat;
 font-size: 16px;
 color: #B6B6B6;
 }
+.popup-menu .common-input .red,
+.popup-menu .surname .red {
+color:red;
+}
+.form-control:focus ~ .placeholder,
+.form-control:valid ~ .placeholder {
+display:none;
+}
 .remember_me {
-	display: flex;
-	justify-content: space-between;
-	max-width: 380px;
+display: flex;
+justify-content: space-between;
+max-width: 380px;
 }
 .check_all input[type=checkbox] {
-	display: none;
+display: none;
 }
 .check_all input[type=checkbox] + label:before {
-    content: "";
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #B6B6B6;
-    height: 20px;
-    width: 20px;
-    margin-right: 12px;
-    transition: color ease .3s;
+content: "";
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid #B6B6B6;
+height: 20px;
+width: 20px;
+margin-right: 12px;
+transition: color ease .3s;
 }
 .check_all input[type=checkbox]:checked + label:before {
-    content:"";
-    border: 1px solid #00BB2E;
-    background: url(../img/icons/check.png);
-    background-size: 100%;
+content:"";
+border: 1px solid #00BB2E;
+background: url(../img/icons/check.png);
+background-size: 100%;
 }
 .popup-menu .remember_me .check_all label {
 display: flex;
@@ -204,27 +207,27 @@ font-size: 14px;
 color: #292929;
 }
 .popup-menu .remember_me {
-	margin: 0; 
-	padding-bottom: 40px;
+margin: 0;
+padding-bottom: 40px;
 }
 .remember_me .check_all{
 width: auto;
 margin: 0;
 }
 .remember_me a {
-	font-family: Montserrat;
+font-family: Montserrat;
 font-size: 18px;
 line-height: 22px;
 text-decoration-line: underline;
 color: #939393;
 }
 .btn-enter {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 380px;
-	height: 54px;
-	background: #00BB2E;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 380px;
+height: 54px;
+background: #00BB2E;
 border-radius: 50px;
 font-family: MontserratBold;
 font-size: 18px;
@@ -233,39 +236,39 @@ color: #FFFFFF;
 z-index: 4;
 }
 .btn-enter:hover {
-	-webkit-box-shadow: 2px 2px 5px 0px rgba(0, 187, 46, 1);;
-    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 187, 46, 1);;
-    box-shadow: 2px 2px 5px 0px rgba(0, 187, 46, 1);;
+-webkit-box-shadow: 2px 2px 5px 0px rgba(0, 187, 46, 1);;
+-moz-box-shadow: 2px 2px 5px 0px rgba(0, 187, 46, 1);;
+box-shadow: 2px 2px 5px 0px rgba(0, 187, 46, 1);;
 }
 .poup_img {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	z-index: 3;
+position: absolute;
+bottom: 0;
+right: 0;
+z-index: 3;
 }
 .popup-menu .date .date_all {
-	margin-bottom: 0;
-	width: 380px;
-	display: flex;
-	justify-content: space-between;
+margin-bottom: 0;
+width: 380px;
+display: flex;
+justify-content: space-between;
 }
 .popup-menu .date div {
-	width: 100%;
+width: 100%;
 }
 .popup-menu .date .slct {
-	width: 100%;
-	margin: 0;
-	height: 40px;
+width: 100%;
+margin: 0;
+height: 40px;
 }
 .popup-menu .date .select {
-	width: 120px;
-	position: relative;
-	margin-bottom: 0;
+width: 120px;
+position: relative;
+margin-bottom: 0;
 }
 .popup-menu .date .drop {
-	height: 140px;
-	overflow-y: scroll;
-	border-radius: 18px 0 0 18px;
+height: 140px;
+overflow-y: scroll;
+border-radius: 18px 0 0 18px;
 }
 .popup-menu .date .drop::-webkit-scrollbar {position: relative;top: 20px; width: 3px; height: 3px;border-radius: 20px;}
 .popup-menu .date .drop::-webkit-scrollbar-button {  background-color: #939393; }
@@ -275,174 +278,170 @@ z-index: 4;
 .popup-menu .date .drop::-webkit-scrollbar-corner { background-color: #999;}}
 .popup-menu .date .drop::-webkit-resizer { background-color: #939393;}
 .popup-menu-registraition .form-popup {
- padding: 30px 0;
+padding: 30px 0;
 }
 .popup-menu-registraition div .popup-menu__name {
-	padding: 10px 0;
+padding: 10px 0;
 }
 .popup-menu-registraition .common-input {
-	margin-bottom: 15px;
+margin-bottom: 15px;
 }
 .date .date_bird {
-	margin: 0 auto 8px auto;
-	max-width: 310px;
-	font-family: Montserrat;
-	text-align: left;
+margin: 0 auto 8px auto;
+max-width: 310px;
+font-family: Montserrat;
+text-align: left;
 font-size: 10px;
 color: #000000;
 }
 .popup-menu-registraition .common-input {
-	height: 40px;
+height: 40px;
 }
 .popup-menu-registraition .btn-enter {
-	height: 45px;
+height: 45px;
 }
 /*catalog filter*/
 .filter-tabs .popup-menu {
-	height: 100vh;
-	position: fixed;
-	overflow: auto;
-	left: -253px;
-	transition: ease 0.5s all;
+height: 100vh;
+position: fixed;
+overflow: auto;
+left: -253px;
+transition: ease 0.5s all;
 }
 .filter-tabs .overlay-menu:target+.popup-menu {
-	top: 0;
-	left: 0px;
-	right: auto;
-	width: 300px;
+top: 0;
+left: 0px;
+right: auto;
+width: 300px;
 }
 .filter-tabs .popup-menu div {
-	width: 100%;
-	margin-bottom: 0;
+width: 100%;
+margin-bottom: 0;
 }
 .filter-tabs .close-menu:before,
 .filter-tabs .close-menu:after {
-	background: #939393;
-	width: 24px;
-	height: 3px;
+background: #939393;
+width: 24px;
+height: 3px;
 }
 .filter-tabs .close-menu:after {
-	top: 8px;
+top: 8px;
 }
 .filter-tabs .close-menu {
-	position: fixed;
+position: fixed;
 top: 25px;
 right: auto;
 left: 245px;
 width: 24px;
 }
-
-
-
 @media only screen and (max-width: 1366px){
 .popup-menu div {
-width: 593px;	
+width: 593px;
 }
 .popup-menu div .popup-menu__name {
-	padding: 20px 0;
+padding: 20px 0;
 }
 .form-popup {
-	padding: 40px 0;
+padding: 40px 0;
 }
 .email label, .pasword label {
-	font-size: 14px;
+font-size: 14px;
 }
 .popup-menu .remember_me {
-	padding-bottom: 30px;
+padding-bottom: 30px;
 }
 .btn-enter {
-	height: 44px;
-	font-size: 16px;
+height: 44px;
+font-size: 16px;
 }
 .poup_img {
-	right: -28px;
+right: -28px;
 }
 }
 @media only screen and (max-width: 960px){
-	.popup-menu div .popup-menu__name {
-		font-size: 26px;
-	}
+.popup-menu div .popup-menu__name {
+font-size: 26px;
+}
 .remember_me a {
-	font-size: 16px;
+font-size: 16px;
 }
 .poup_img {
-	right: -30px;
-	bottom: -17px;
-} 
+right: -30px;
+bottom: -17px;
+}
 }
 @media only screen and (max-width: 768px){
 .popup-menu div {
-	width: 552px;
+width: 552px;
 }
 .btn-enter {
-	font-size: 14px;
+font-size: 14px;
 }
 }
 @media only screen and (max-width: 700px){
 .popup-menu div {
-	width: 450px;
+width: 450px;
 }
 .popup-menu div .popup-menu__name {
-	font-size: 20px;
-	padding: 15px 0;
+font-size: 20px;
+padding: 15px 0;
 }
 .popup-menu .common-input, .popup-menu .date,
 .popup-menu .date .date_all,
 .popup-menu .remember_me, .btn-enter {
-	width: 300px;
+width: 300px;
 }
 .popup-menu .date .select {
-	width: 90px;
+width: 90px;
 }
 .date .date_bird {
-	max-width: 240px;
+max-width: 240px;
 }
 .popup-menu .date .slct {
-	padding-left: 15px;
+padding-left: 15px;
 }
-
 .remember_me a {
-	font-size: 12px;
+font-size: 12px;
 }
 .popup-menu .remember_me .check_all label {
-	font-size: 12px;
+font-size: 12px;
 }
 .check_all input[type=checkbox] + label:before {
-	margin-right: 10px;
+margin-right: 10px;
 }
 .close-menu {
-	top: 20px;
-	right: 20px;
-	width: 24px;
-	height: 20px;
+top: 20px;
+right: 20px;
+width: 24px;
+height: 20px;
 }
 .close-menu:before,
 .close-menu:after {
-	width: 24px;
-	background: #292929;
-	height: 2px;
+width: 24px;
+background: #292929;
+height: 2px;
 }
 .close-menu:before {
-	top: 8px;
+top: 8px;
 }
 .filter-tabs .close-menu:before {
-	top: 11px;
+top: 11px;
 }
 }
 @media only screen and (max-width: 500px){
-	.popup-menu {
-		padding: 0;
-	}
-	.popup-menu div {
-	width: 100%;
-} 
+.popup-menu {
+padding: 0;
+}
+.popup-menu div {
+width: 100%;
+}
 .overlay-menu:target+.popup-menu {
-	top:0;
+top:0;
 }
 .filter-tabs .overlay-menu:target+.popup-menu {
-	width: 253px;
+width: 253px;
 }
 .filter-tabs .close-menu {
-	left: 210px;
+left: 210px;
 }
 }
