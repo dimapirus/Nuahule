@@ -3303,6 +3303,7 @@ padding-top: 20px;
 }
 .product .good_modal_wrap .good_modal .mobile_good .btn-good,
 .good_modal_wrap .good_modal .mobile_good .btn-good {
+	margin-top: 5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -3316,6 +3317,10 @@ font-family: MontserratBold;
 font-size: 14px;
 text-transform: uppercase;
 color: #FFFFFF;
+}
+.product .good_modal_wrap .good_modal .mobile_good .order,
+.good_modal_wrap .good_modal .mobile_good .order {
+	margin-bottom: 15px;
 }
 .product .good_modal_wrap .good_modal .mobile_good p,
 .good_modal_wrap .good_modal .mobile_good p {
@@ -3388,8 +3393,10 @@ text-transform: none;
 	padding: 0;
 	padding-bottom: 140px;
 }
-
-
+.enter_user 
+.user_out {
+	display: none;
+}
 
 
 
