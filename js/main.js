@@ -195,6 +195,14 @@ $( "#amount12" ).val( ui.values[ 1 ] );
 $( "#amount11" ).val( $( "#slider-range6" ).slider( "values", 0 ) );
 $( "#amount12" ).val( $( "#slider-range6" ).slider( "values", 1 ) );
 } );
+$('.inc').on('click', function() {
+	const $input = $(this).closest('div').find('input');
+	$input.val(parseInt($input.val(), 10) + 1);
+});
+$('.dec').on('click', function() {
+	const $input = $(this).closest('div').find('input');
+	parseInt($input.val(), 10) > 1 && $input.val(parseInt($input.val(), 10) - 1);
+});
 // Select
 $('.slct').click(function(){
 var dropBlock = $(this).parent().find('.drop');
@@ -220,10 +228,6 @@ controls: false,
 pagerCustom: '#bx-pager'
 });
 });
-// padding у tab
-var p = document.getElementById('tab-content').clientHeight;
-var h = document.getElementById('tabs');
-h.style.paddingBottom = p + 30 + 'px';
 // счетчик товара
 var count = document.getElementById('count').innerHTML = 0;
 function func() {
@@ -237,6 +241,10 @@ count--;
 count.innerHTML = count;
 }
 };
+// padding у tab
+var p = document.getElementById('tab-content').clientHeight;
+var h = document.getElementById('tabs');
+h.style.paddingBottom = p + 30 + 'px';
 // раскрывающиеся блоки FIRST
 var menuElem = document.getElementById('sweeties');
 var titleElem = menuElem.querySelector('.title');
