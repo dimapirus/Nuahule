@@ -1485,6 +1485,11 @@ background: #00BB2E;
 border: 3px solid #00BB2E;
 background: transparent;
 }
+.size_cube_modal input[type=checkbox]:hover + label:before,
+.size_cube_modal input[type=radio]:hover + label:before {
+border: 3px solid #00BB2E;
+background: transparent;
+}
 .catalog-body input[type=checkbox]:checked + label:before,
 .checkbox_content input[type=checkbox]:checked + label:before,
 .catalog-body input[type=radio]:checked + label:before,
@@ -3116,7 +3121,7 @@ color: #292929;
 }
 .good_modal,
 .product .good_modal {
-	padding: 54px 65px;
+	padding: 35px 45px;
 }
 .good_modal .good_modal_first,
 .product .good_modal .good_modal_first {

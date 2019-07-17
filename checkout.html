@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
-		<title>Shopping Cart</title>
+		<title>Checkout</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
@@ -542,14 +542,14 @@
 					<p class="popup-menu__name">вход</p>
 					<div class="form-popup">
 						<form action="#" method="post">
-							<p class="common-input email">
-								<input type="text" id="input" >
-								<label for="input">E-mail<span>*</span></label>
-							</p>
-							<p class="common-input pasword">
-								<input type="password" id="input" >
-								<label for="input">Пароль<span>*</span></label>
-							</p>
+							<div class="common-input">
+								<input type="pasword"  class="form-control" required>
+								<div class="placeholder">E-mail<span class="red">*</span></div>
+							</div>
+							<div class="common-input">
+								<input type="pasword"  class="form-control" required>
+								<div class="placeholder">Пароль<span class="red">*</span></div>
+							</div>
 							<div class="remember_me">
 								<div class="check_all">
 									<input type="checkbox" id="checkModal1" name="checkModal1" />
@@ -573,22 +573,22 @@
 					<p class="popup-menu__name">Регистрация</p>
 					<div class="form-popup">
 						<form action="#" method="post">
-							<p class="common-input name">
-								<input type="text" id="input" >
-								<label for="input">Имя<span>*</span></label>
-							</p>
-							<p class="common-input surname">
-								<input type="text" id="input" >
-								<label for="input">Фамилия<span>*</span></label>
-							</p>
-							<p class="common-input number">
-								<input type="number" id="input" >
-								<label for="input">Телефон<span>*</span></label>
-							</p>
-							<p class="common-input email">
-								<input type="text" id="input" >
-								<label for="input">E-mail<span>*</span></label>
-							</p>
+							<div class="common-input">
+								<input type="text"  class="form-control" required>
+								<div class="placeholder">Имя<span class="red">*</span></div>
+							</div>
+							<div class="common-input">
+								<input type="text"  class="form-control" required>
+								<div class="placeholder">Фамилия<span class="red">*</span></div>
+							</div>
+							<div class="common-input">
+								<input type="number"  class="form-control" required>
+								<div class="placeholder">Телефон<span class="red">*</span></div>
+							</div>
+							<div class="common-input">
+								<input type="text"  class="form-control" required>
+								<div class="placeholder">E-mail<span class="red">*</span></div>
+							</div>
 							<div class="date">
 								<p class="date_bird">Дата рождения</p>
 								<div class="date_all">
@@ -642,14 +642,14 @@
 									</div>
 								</div>
 							</div>
-							<p class="common-input password">
-								<input type="number" id="input" >
-								<label for="input">Пароль<span>*</span></label>
-							</p>
-							<p class="common-input confirm_password">
-								<input type="number" id="input" >
-								<label for="input">Повторите пароль<span>*</span></label>
-							</p>
+							<div class="common-input">
+								<input type="text"  class="form-control" required>
+								<div class="placeholder">Пароль<span class="red">*</span></div>
+							</div>
+							<div class="common-input">
+								<input type="text"  class="form-control" required>
+								<div class="placeholder">Повторите пароль<span class="red">*</span></div>
+							</div>
 							<a href="#" class="btn-enter">Зарегистрироваться</a>
 						</form>
 					</div>
