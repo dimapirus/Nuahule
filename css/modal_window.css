@@ -150,8 +150,7 @@ font-family: Montserrat;
 font-size: 16px;
 color: #000000;
 }
-.popup-menu .common-input .placeholder,
-.popup-menu .surname .placeholder {
+.popup-menu .common-input .placeholder {
 position:absolute;
 transform:translateY(-50%);
 pointer-events:none;
@@ -165,8 +164,7 @@ font-family: Montserrat;
 font-size: 16px;
 color: #B6B6B6;
 }
-.popup-menu .common-input .red,
-.popup-menu .surname .red {
+.popup-menu .common-input .red {
 color:red;
 }
 .form-control:focus ~ .placeholder,

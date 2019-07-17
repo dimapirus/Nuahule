@@ -2851,8 +2851,7 @@ color: #292929;
 }
 .select_checkout {
 	position: relative;
-	max-width: 370px;
-	width: 50%;
+	width: 49%;
 	height: 50px;
 }
 .select_checkout .slct {
@@ -2892,6 +2891,7 @@ overflow: hidden;
 margin-bottom: 30px;
 }
 .checkout_content .common-input input {
+position: relative;
 width: 100%;
 height: 100%;
 padding: 0 35px;
@@ -2901,25 +2901,26 @@ font-family: Montserrat;
 font-size: 16px;
 color: #000000;
 }
-.checkout_content .common-input span {
-color: red;
-font-size: 16px;
-padding: 0;
-}
-.checkout_content .common-input input:focus + label {
-display: none;
-}
-.checkout_content .common-input label {
-display: inline-block;
-position: absolute;
+.checkout_content .common-input .placeholder {
+position:absolute;
+transform:translateY(-50%);
+pointer-events:none;
 top:50%;
-margin-top: -11px;
+margin-top: -4px;
 cursor: pointer;
 left: 35px;
+height: 22px;
 width: auto;
 font-family: Montserrat;
 font-size: 16px;
 color: #B6B6B6;
+}
+.checkout_content .common-input .red {
+color:red;
+}
+.form-control:focus ~ .placeholder,
+.form-control:valid ~ .placeholder {
+display:none;
 }
 .delivery .form_checkout {
 	padding-bottom: 0;
