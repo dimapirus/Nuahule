@@ -310,25 +310,14 @@
 											</p>
 										</div>
 									</li>
-									<li class="card-info-two">
+									<li class="card-info-two card-info-good-second">
 										<div>
 											<p class="price-card">4 400 р.
 												<span>5 300 р.</span>
 											</p>
 										</div>
-										<div class="order">
-											<section>
-												<div class="stepper js-spinner">
-													<div class="stepper__controls">
-														<button type="button" spinner-button="down">-</button>
-														<input type="number" min="1" max="100" step="1" value="1" class="stepper__input" data-stepper-debounce="400">
-														<button type="button" spinner-button="up">+</button>
-													</div>
-												</div>
-											</section>
-										</div>
 										<div>
-											<a href="#win10" class="btn-enter btn-card-info">Купить</a>
+											<a href="#win9" class="btn_green btn_green_long">уведомить о поступлении</a>
 										</div>
 									</li>
 									<li class="card-info-three">
@@ -1028,12 +1017,29 @@
 		</div>
 		<div class="container-menu">
 			<!-- Модальное окно ВХОД -->
-			<a href="#x" class="overlay-menu" id="win10"></a>
-			<div class="popup-menu popup-menu_min">
+			<a href="#x" class="overlay-menu" id="win9"></a>
+			<div class="popup-menu">
 				<div class="poup-1">
-					<p class="name_poup">Товар успешно добавлен в корзину!</p>
-					<a href="#" class="btn_green">перейти в корзину</a>
-					<a href="#" class="btn_grey">продолжить покупки</a>
+					<li class="popup-menu__name_good"><p>Введите данные, чтобы узнать, когда появится товар</p></li>
+					<div class="form-popup form-popup_modal">
+						<form action="#" method="post">
+							<li class="checkout_content checkout_content_modal">
+									<p>
+										<span>Имя<span>*</span></span>
+										<input type="text" placeholder="Иван">
+									</p>
+									<p>
+										<span>E-mail<span>*</span></span>
+										<input type="text" placeholder="ivan.ivanov@mail.ru">
+									</p>
+									<p>
+										<span>Телефон<span>*</span></span>
+										<input type="number" placeholder="+ 7 (902) 222 32 -23">
+									</p>
+								</li>
+							<a href="#" class="btn_green btn_green_line">Уведомить о поступлении</a>
+						</form>
+					</div>
 					<a class="close-menu" title="Закрыть" href="#close"></a>
 				</div>
 			</div>
