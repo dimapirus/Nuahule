@@ -4001,5 +4001,19 @@ display: none;
 .header-top .enter_user svg {
 	margin-right: 10px;
 }
-
+.list_information {
+	padding: 50px;
+}
+.list_information, .list_information p, .list_information a {
+font-family: Montserrat;
+font-size: 18px;
+color: #292929;
+}
+.list_information a {
+	margin-left: 15px;
+	color: #B6B6B6;
+}
+.list_information a:hover {
+	color: #4BC9FF;
+}
 
