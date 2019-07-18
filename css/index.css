@@ -3025,7 +3025,6 @@ color: #FFFFFF;
 	height: 516px;
 	/*max-height: 400px;*/
 	margin-right: 20px;
-	border: 1px solid #E5E5E5;
 box-sizing: border-box;
 }
 .about_us_nav_tab,
@@ -3095,29 +3094,6 @@ color: #292929;
 .normal_text_four span {
 	font-family: MontserratSemiBold;
 	display: inline-block;
-}
-.personal_area_common #tabs .tab {
-	display: flex;
-	align-items: center;
-}
-.personal_area_common #tabs .tab span {
-	margin-right: 14px;
-}
-.personal_area_common #tabs .tab:nth-of-type(1) span {
-	width: 24px;
-	height: 28px;
-}
-.personal_area_common #tabs .tab:nth-of-type(2) span {
-	width: 29px;
-	height: 26px;
-}
-.personal_area_common #tabs .tab:nth-of-type(3) span {
-	width: 24px;
-	height: 26px;
-}
-.personal_area_common #tabs .tab:nth-of-type(4) span {
-	width: 26px;
-	height: 26px;
 }
 .good_modal,
 .product .good_modal {
@@ -3397,20 +3373,426 @@ text-transform: none;
 .user_out {
 	display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.personal_area_common #tabs .tab {
+	display: flex;
+	align-items: center;
+}
+.personal_area_common #tabs .tab span {
+	margin-right: 14px;
+}
+.personal_area_common #tabs .tab:nth-of-type(1) span {
+	width: 24px;
+	height: 28px;
+}
+.personal_area_common #tabs .tab:nth-of-type(2) span {
+	width: 29px;
+	height: 26px;
+}
+.personal_area_common #tabs .tab:nth-of-type(3) span {
+	width: 24px;
+	height: 26px;
+}
+.personal_area_common #tabs .tab:nth-of-type(4) span {
+	width: 26px;
+	height: 26px;
+}
+.personal_area_tab .tab span svg path{
+	fill: black;
+}
+.personal_area_common #tabs .whiteborder svg path {
+fill: white;
+}
+.personal_area_common #tabs .tabContent {
+	padding: 70px 0;
+	border: 1px solid #F5F5F5;
+}
+.my_data {
+	max-width: 760px;
+	width: 100%;
+	margin: 0 auto;
+}
+.my_data_name {
+	font-family: MontserratSemiBold;
+font-size: 24px;
+color: #292929;
+padding-bottom: 10px;
+}
+.my_data .checkout_content {
+	padding: 0;
+}
+.my_data .checkout_content p {
+	padding-top: 10px;
+}
+.my_data  .my_date_select {
+	padding-top: 14px;
+}
+.my_data  .my_date_select .date_bird {
+margin: 0;
+padding-bottom: 9px;
+padding-left: 20px;
+}
+.my_data  .my_date_select .date_all {
+	display: flex;
+}
+.my_data  .my_date_select .select .slct{
+	width: 117px;
+	margin-right: 11px;
+}
+.my_data  .my_date_select .select .drop {
+	height: 145px;
+	overflow-y: scroll;
+	border-radius: 18px 0 0 18px;
+}
+.btn_green{
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 54px;
+	width: 264px;
+	font-family: MontserratBold;
+font-size: 18px;
+text-transform: uppercase;
+color: #FFFFFF;
+background: #00BB2E;
+border-radius: 50px;
+font-family: MontserratBold;
+font-size: 18px;
+text-transform: uppercase;
+}
+.btn_grey {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 54px;
+	width: 264px;
+	font-family: MontserratBold;
+font-size: 18px;
+text-transform: uppercase;
+	color: #FFFFFF;
+	background: #939393;
+border-radius: 50px;
+}
+.my_data .form_data {
+	border-bottom: 1px solid #F5F5F5;
+	padding-bottom: 40px;
+}
+.my_data_name_two {
+	padding-top: 40px;
+}
+.personal_area_common #tabs .tabContent_two {
+	border: none;
+	padding: 0;
+}
+.personal_area_common #tabs .tabContent_two .products {
+	padding: 0;
+}
+.my_selection {
+	padding: 40px;
+	background: #F5F5F5;
+border: 1px solid #E5E5E5;
+box-sizing: border-box;
+}
+.my_selection ul {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+.btn_white {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 272px;
+	height: 54px;
+	background: #FFFFFF;
+border: 1px solid #292929;
+box-sizing: border-box;
+border-radius: 50px;
+font-family: MontserratBold;
+font-size: 14px;
+text-transform: uppercase;
+color: #292929;
+}
+.my_selection ul p {
+	font-family: MontserratBold;
+font-size: 18px;
+color: #292929;
+}
+.my_selection ul p span {
+	margin-left: 20px;
+	font-family: MontserratSemiBold;
+font-size: 30px;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #292929;
+}
+.my_orders ul {
+	padding: 18px 50px;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #E5E5E5;
+box-sizing: border-box;
+margin-bottom: 10px;
+}
+.my_orders ul:hover {
+	cursor: pointer;
+	border: 1px solid #00BB2E;
+}
+.my_orders .my_orders_head:hover {
+	border: 1px solid #E5E5E5;
+	cursor: default;
+}
+.my_orders ul li {
+	width: 22%;
+	display: flex;
+	align-items: center;
+	font-family: Montserrat;
+font-size: 15px;
+color: #292929;
+}
+.my_orders ul li:nth-of-type(5) {
+	width: 12%;
+	font-family: MontserratSemiBold;
+font-size: 18px;
+text-transform: uppercase;
+color: #292929;
+}
+.personal_area_common #tabs .tabContent_three {
+	border: none;
+	padding: 0;
+}
+.my_orders_head {
+	background: #F5F5F5;
+}
+.my_orders .my_orders_head li:nth-of-type(1),
+.my_orders .my_orders_head li:nth-of-type(5) {
+	font-family: Montserrat;
+	font-size: 15px;
+	text-transform: none;
+}
+.my_orders ul li:nth-of-type(1) {
+	font-family: MontserratSemiBold;
+font-size: 14px;
+color: #292929;
+}
+.my_orders ul .end_green {
+	color: #00BB2E;
+}
+.my_orders ul .end_red {
+	color: #EB5757;
+}
+.nav_orders {
+	display: flex;
+	padding-top: 40px;
+}
+.nav_orders a {
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 43px;
+	height: 43px;
+	background: #FFFFFF;
+border: 1px solid #BABABA;
+box-sizing: border-box;
+font-family: MontserratSemiBold;
+font-size: 14px;
+color: #292929;
+}
+.nav_orders a:hover {
+background: #00BB2E;
+border: none;	
+color: #FFFFFF;
+}
+.nav_orders .to_be {
+	margin-left: 15px;
+	width: auto;
+	border: none;
+	font-family: MontserratBold;
+font-size: 14px;
+text-transform: uppercase;
+color: #00BB2E;
+}
+.nav_orders .to_be img {
+	margin-left: 8px;
+}
+.nav_orders .to_be:hover {
+	background: transparent;
+	color: #00BB2E;
+}
+.my_orders_mob {
+	display: none;
+}
+.my_orders_mob div {
+	margin-bottom: 20px;
+	border: 1px solid #E5E5E5;
+box-sizing: border-box;
+}
+.my_orders_mob div .my_orders_mob_head {
+background: #F5F5F5;
+border-bottom: 1px solid #E5E5E5;
+box-sizing: border-box;
+}
+.my_orders_mob div .my_orders_mob_head li {
+	padding: 17px 0;
+	margin-bottom: 8px;
+}
+.my_orders_mob div ul li {
+	padding: 8px 0;
+	max-width: 452px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.my_orders_mob div ul li p {
+font-family: Montserrat;
+font-size: 13px;
+color: #292929;
 } 
+.my_orders_mob div ul li p:nth-of-type(1) {
+	color: #B6B6B6;
+}
+.my_orders_mob div ul li .bold_order {
+	font-family: MontserratSemiBold;
+font-size: 12px;
+color: #292929;
+}
+.my_orders_mob div ul li .extra_bold_order {
+	font-family: MontserratSemiBold;
+font-size: 15px;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #292929;
+}
+.my_orders_mob div .href_order a {
+	display: flex;
+	align-items: center;
+	font-family: MontserratBold;
+font-size: 12px;
+text-align: center;
+text-transform: uppercase;
+color: #00BB2E;
+}
+.my_orders_mob div .href_order li {
+	justify-content: flex-end;
+}
+.my_orders_mob div .href_order a img {
+	margin-left: 10px;
+}
+.my_orders_mob .nav_orders {
+	border: none;
+}
+.personal_area_common #tabs .tabContent_details {
+	border: 1px solid #E5E5E5;
+}
+.details_head {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 40px;
+	background: #F5F5F5;
+border-bottom: 1px solid #E5E5E5;
+box-sizing: border-box;
+}
+.details_head li:nth-of-type(1) {
+	font-family: MontserratBold;
+font-size: 18px;
+color: #292929;
+}
+.details_head li:nth-of-type(1) span {
+	margin-left: 10px;
+}
+.details_head li:nth-of-type(2) {
+	display: flex;
+	align-items: center;
+	font-family: MontserratBold;
+font-size: 14px;
+text-align: center;
+text-transform: uppercase;
+color: #00BB2E;
+}
+.details_head li:nth-of-type(2) img {
+	transform: rotate(180deg);
+	margin-right: 5px;
+}
+.list_details {
+	padding: 40px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #E5E5E5;
+box-sizing: border-box;
+}
+.list_details li {
+	display: flex;
+	align-items: center;
+}
+.list_details li span {
+	display: block;
+	font-family: MontserratSemiBold;
+font-size: 14px;
+color: #B6B6B6;
+padding-top: 18px;
+text-transform: none;
+}
+.list_details li:nth-of-type(1) img {
+width: 115px;
+}
+.list_details li:nth-of-type(2) {
+font-family: MontserratSemiBold;
+font-size: 18px;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #292929;
+}
+.list_details li:nth-of-type(2) span {
+	padding-top: 8px;
+	max-width: 321px;
+	text-transform: none;
+	font-family: MontserratMedium;
+font-size: 15px;
+line-height: 19px;
+color: #292929;
+}
+.list_details li:nth-of-type(3),
+.list_details li:nth-of-type(4),
+.list_details li:nth-of-type(5) {
+font-family: MontserratSemiBold;
+font-size: 18px;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #292929;
+}
+.details_footer {
+	padding: 30px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #F5F5F5;
+}
+.details_footer .btn_green {
+	margin: 0;
+}
+.details_footer li p {
+	font-family: MontserratBold;
+font-size: 18px;
+color: #292929;
+}
+.details_footer li p span {
+	font-family: MontserratSemiBold;
+font-size: 30px;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #292929;
+margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
