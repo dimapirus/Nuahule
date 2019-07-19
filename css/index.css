@@ -3272,7 +3272,8 @@ margin-left: 12px;
 .good_modal li .tasty_link a {
 	margin-left: 10px;
 }
-.inc, .dec {
+.inc, .dec,
+.decMin, .incPlus{
 	width: 40px;
 	height: 40px;
 	border: 2px solid #00BB2E;
@@ -3282,7 +3283,7 @@ margin-left: 12px;
 	color: #00BB2E;
 	background: transparent;
 }
-#countID {
+#countID, #countNum {
 	font-family: MontserratBold;
 font-size: 18px;
 color: #292929;
@@ -4057,4 +4058,6 @@ color: #292929;
 .active input[type=radio] + label:before {
 	border: 3px solid #00BB2E;
 }
-
+.decMin, #countNum {
+	display: none;
+}

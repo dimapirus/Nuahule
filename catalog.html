@@ -1175,10 +1175,10 @@
 																			<a href="#">?</a>
 																		</p>
 																		<div class="order">
-																			<div>
-																				<button class="dec">-</button>
-																				<input id="countID" class="amount" value="1"/>
-																				<button class="inc">+</button>
+																			<div class="magic-counter">
+																				<button data-role="decrement" class="decMin">-</button>
+																				<input data-role="count" id="countNum" type="number" readonly value="0">
+																				<button data-role="increment" class="incPlus">+</button>
 																			</div>
 																		</div>
 																	</li>
@@ -1189,10 +1189,10 @@
 																			<a href="#">?</a>
 																		</p>
 																		<div class="order">
-																			<div>
-																				<button class="dec">-</button>
-																				<input id="countID" class="amount" value="1"/>
-																				<button class="inc">+</button>
+																			<div class="magic-counter">
+																				<button data-role="decrement" class="decMin">-</button>
+																				<input data-role="count" id="countNum" type="number" readonly value="0">
+																				<button data-role="increment" class="incPlus">+</button>
 																			</div>
 																		</div>
 																	</li>
@@ -1203,7 +1203,11 @@
 																			<a href="#">?</a>
 																		</p>
 																		<div class="order">
-																			<a href="#" class="tasty_plus">+</a>
+																			<div class="magic-counter">
+																				<button data-role="decrement" class="decMin">-</button>
+																				<input data-role="count" id="countNum" type="number" readonly value="0">
+																				<button data-role="increment" class="incPlus">+</button>
+																			</div>
 																		</div>
 																	</li>
 																	<li>
@@ -1213,7 +1217,11 @@
 																			<a href="#">?</a>
 																		</p>
 																		<div class="order">
-																			<a href="#" class="tasty_plus">+</a>
+																			<div class="magic-counter">
+																				<button data-role="decrement" class="decMin">-</button>
+																				<input data-role="count" id="countNum" type="number" readonly value="0">
+																				<button data-role="increment" class="incPlus">+</button>
+																			</div>
 																		</div>
 																	</li>
 																	<li>
@@ -1223,10 +1231,10 @@
 																			<a href="#">?</a>
 																		</p>
 																		<div class="order">
-																			<div>
-																				<button class="dec">-</button>
-																				<input id="countID" class="amount" value="1"/>
-																				<button class="inc">+</button>
+																			<div class="magic-counter">
+																				<button data-role="decrement" class="decMin">-</button>
+																				<input data-role="count" id="countNum" type="number" readonly value="0">
+																				<button data-role="increment" class="incPlus">+</button>
 																			</div>
 																		</div>
 																	</li>
@@ -1237,10 +1245,10 @@
 																			<a href="#">?</a>
 																		</p>
 																		<div class="order">
-																			<div>
-																				<button class="dec">-</button>
-																				<input id="countID" class="amount" value="1"/>
-																				<button class="inc">+</button>
+																			<div class="magic-counter">
+																				<button data-role="decrement" class="decMin">-</button>
+																				<input data-role="count" id="countNum" type="number" readonly value="0">
+																				<button data-role="increment" class="incPlus">+</button>
 																			</div>
 																		</div>
 																	</li>
@@ -1251,7 +1259,11 @@
 																			<a href="#">?</a>
 																		</p>
 																		<div class="order">
-																			<a href="#" class="tasty_plus">+</a>
+																			<div class="magic-counter">
+																				<button data-role="decrement" class="decMin">-</button>
+																				<input data-role="count" id="countNum" type="number" readonly value="0">
+																				<button data-role="increment" class="incPlus">+</button>
+																			</div>
 																		</div>
 																	</li>
 																	<li>
@@ -1261,7 +1273,11 @@
 																			<a href="#">?</a>
 																		</p>
 																		<div class="order">
-																			<a href="#" class="tasty_plus">+</a>
+																			<div class="magic-counter">
+																				<button data-role="decrement" class="decMin">-</button>
+																				<input data-role="count" id="countNum" type="number" readonly value="0">
+																				<button data-role="increment" class="incPlus">+</button>
+																			</div>
 																		</div>
 																	</li>
 																</ul>
@@ -1311,12 +1327,12 @@
 															<li class="good_modal_second">
 																<p>2 200 р.<span>3 050 р.</span></p>
 																<div class="order">
-																			<div>
-																				<button class="dec">-</button>
-																				<input id="countID" class="amount" value="1"/>
-																				<button class="inc">+</button>
-																			</div>
-																		</div>
+																	<div>
+																		<button class="dec">-</button>
+																		<input id="countID" class="amount" value="1"/>
+																		<button class="inc">+</button>
+																	</div>
+																</div>
 																<p>
 																	<a href="#">Купить</a>
 																	<span>Общая стоимость заказа:<span>4 400 Р.</span></span>
@@ -1344,12 +1360,12 @@
 															</li>
 															<li class="mobile_good">
 																<div class="order">
-																			<div>
-																				<button class="dec">-</button>
-																				<input id="countID" class="amount" value="1"/>
-																				<button class="inc">+</button>
-																			</div>
-																		</div>
+																	<div>
+																		<button class="dec">-</button>
+																		<input id="countID" class="amount" value="1"/>
+																		<button class="inc">+</button>
+																	</div>
+																</div>
 																<a href="#" class="btn-good">Купить</a>
 																<p>Общая стоимость заказа: <span>4 400 Р.</span></p>
 															</li>
@@ -1715,247 +1731,247 @@
 			</div>
 		</div>
 		<footer>
-		<div class="container">
-			<div class="row">
-				<img id="footer-img" src="img/index/footer_top.png" alt="">
-				<div class="footer-top footer-top-index">
-					<div class="footer-table">
-						<ul class="footer-list-1">
-							<li>
-								<img src="img/index/Logo.png" alt="">
-							</li>
-							<li>
-								<a href="tel:+74951421840">
-									<p><img src="img/icons/phone_white.png" alt=""></p>
-									<p>+7 (495) 142 18 40 <span>Ждем Вашего звонка!</span></p>
-								</a>
-							</li>
-							<li>
-								<a href="tel:+74951421840">
-									<p><img src="img/icons/watsup.png" alt=""></p>
-									<p>+7 (495) 142 89 40<span>Мы в WhatsApp</span></p>
-								</a>
-							</li>
-						</ul>
-						<div class="footer_min-dev mob-xs-none">
-							<ul class="footer-list-2">
-								<li><a href="#">Акции и скидки</a></li>
-								<li><a href="#">Кальяны</a></li>
-								<li><a href="#">Табак</a></li>
-								<li><a href="#">Чаши</a></li>
+			<div class="container">
+				<div class="row">
+					<img id="footer-img" src="img/index/footer_top.png" alt="">
+					<div class="footer-top footer-top-index">
+						<div class="footer-table">
+							<ul class="footer-list-1">
+								<li>
+									<img src="img/index/Logo.png" alt="">
+								</li>
+								<li>
+									<a href="tel:+74951421840">
+										<p><img src="img/icons/phone_white.png" alt=""></p>
+										<p>+7 (495) 142 18 40 <span>Ждем Вашего звонка!</span></p>
+									</a>
+								</li>
+								<li>
+									<a href="tel:+74951421840">
+										<p><img src="img/icons/watsup.png" alt=""></p>
+										<p>+7 (495) 142 89 40<span>Мы в WhatsApp</span></p>
+									</a>
+								</li>
 							</ul>
-							<ul class="footer-list-3">
-								<li><a href="#">Колбы</a></li>
-								<li><a href="#">Уголь</a></li>
-								<li><a href="#">Аксессуары</a></li>
-								<li><a href="#">НАши магазины</a></li>
-							</ul>
-							<ul class="footer-list-4">
-								<li><a href="#">Доставка и оплата</a></li>
-								<li><a href="#">гарантии и возврат</a></li>
-								<li><a href="#">подарочные сертификаты</a></li>
-								<li><a href="#">Отзывы</a></li>
-							</ul>
-							<ul class="footer-list-5">
-								<li><a href="#">политика конфиденциальности</a></li>
-								<li><a href="#">условия продажи и оферты</a></li>
-								<li><a href="#">карта сайта</a></li>
-								<li><a href="#"></a></li>
+							<div class="footer_min-dev mob-xs-none">
+								<ul class="footer-list-2">
+									<li><a href="#">Акции и скидки</a></li>
+									<li><a href="#">Кальяны</a></li>
+									<li><a href="#">Табак</a></li>
+									<li><a href="#">Чаши</a></li>
+								</ul>
+								<ul class="footer-list-3">
+									<li><a href="#">Колбы</a></li>
+									<li><a href="#">Уголь</a></li>
+									<li><a href="#">Аксессуары</a></li>
+									<li><a href="#">НАши магазины</a></li>
+								</ul>
+								<ul class="footer-list-4">
+									<li><a href="#">Доставка и оплата</a></li>
+									<li><a href="#">гарантии и возврат</a></li>
+									<li><a href="#">подарочные сертификаты</a></li>
+									<li><a href="#">Отзывы</a></li>
+								</ul>
+								<ul class="footer-list-5">
+									<li><a href="#">политика конфиденциальности</a></li>
+									<li><a href="#">условия продажи и оферты</a></li>
+									<li><a href="#">карта сайта</a></li>
+									<li><a href="#"></a></li>
+								</ul>
+							</div>
+							<div class="footer_xs-dev footer-tab-vision">
+								<ul>
+									<li><a href="#">Акции и скидки</a></li>
+									<li><a href="#">Кальяны</a></li>
+									<li><a href="#">Табак</a></li>
+									<li><a href="#">Чаши</a></li>
+									<li><a href="#">Колбы</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Уголь</a></li>
+									<li><a href="#">Аксессуары</a></li>
+									<li><a href="#">НАши магазины</a></li>
+									<li><a href="#">Доставка и оплата</a></li>
+									<li><a href="#">гарантии и возврат</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">подарочные сертификаты</a></li>
+									<li><a href="#">Отзывы</a></li>
+									<li><a href="#">политика конфиденциальности</a></li>
+									<li><a href="#">условия продажи и оферты</a></li>
+									<li><a href="#">карта сайта</a></li>
+								</ul>
+							</div>
+							<div class="footer_xs-dev mob-xs-vision">
+								<ul>
+									<li><a href="#">Акции и скидки</a></li>
+									<li><a href="#">Кальяны</a></li>
+									<li><a href="#">Табак</a></li>
+									<li><a href="#">Чаши</a></li>
+									<li><a href="#">Колбы</a></li>
+									<li><a href="#">Уголь</a></li>
+									<li><a href="#">Аксессуары</a></li>
+									<li><a href="#">НАши магазины</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Доставка и оплата</a></li>
+									<li><a href="#">гарантии и возврат</a></li>
+									<li><a href="#">подарочные сертификаты</a></li>
+									<li><a href="#">Отзывы</a></li>
+									<li><a href="#">политика конфиденциальности</a></li>
+									<li><a href="#">условия продажи и оферты</a></li>
+									<li><a href="#">карта сайта</a></li>
+									<li><a href="#"></a></li>
+									
+								</ul>
+							</div>
+							<ul class="footer-list-6">
+								<li><a href="#">
+									<img src="img/icons/vk.png" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="img/icons/youtybe.png" alt="">
+								</a></li>
+								<li><a href="#">
+									<img src="img/icons/inst.png" alt="">
+								</a></li>
 							</ul>
 						</div>
-						<div class="footer_xs-dev footer-tab-vision">
-							<ul>
-								<li><a href="#">Акции и скидки</a></li>
-								<li><a href="#">Кальяны</a></li>
-								<li><a href="#">Табак</a></li>
-								<li><a href="#">Чаши</a></li>
-								<li><a href="#">Колбы</a></li>
-							</ul>
-							<ul>
-								<li><a href="#">Уголь</a></li>
-								<li><a href="#">Аксессуары</a></li>
-								<li><a href="#">НАши магазины</a></li>
-								<li><a href="#">Доставка и оплата</a></li>
-								<li><a href="#">гарантии и возврат</a></li>
-							</ul>
-							<ul>
-								<li><a href="#">подарочные сертификаты</a></li>
-								<li><a href="#">Отзывы</a></li>
-								<li><a href="#">политика конфиденциальности</a></li>
-								<li><a href="#">условия продажи и оферты</a></li>
-								<li><a href="#">карта сайта</a></li>
-							</ul>
-						</div>
-						<div class="footer_xs-dev mob-xs-vision">
-							<ul>
-								<li><a href="#">Акции и скидки</a></li>
-								<li><a href="#">Кальяны</a></li>
-								<li><a href="#">Табак</a></li>
-								<li><a href="#">Чаши</a></li>
-								<li><a href="#">Колбы</a></li>
-								<li><a href="#">Уголь</a></li>
-								<li><a href="#">Аксессуары</a></li>
-								<li><a href="#">НАши магазины</a></li>
-							</ul>
-							<ul>
-								<li><a href="#">Доставка и оплата</a></li>
-								<li><a href="#">гарантии и возврат</a></li>
-								<li><a href="#">подарочные сертификаты</a></li>
-								<li><a href="#">Отзывы</a></li>
-								<li><a href="#">политика конфиденциальности</a></li>
-								<li><a href="#">условия продажи и оферты</a></li>
-								<li><a href="#">карта сайта</a></li>
-								<li><a href="#"></a></li>
-								
-							</ul>
-						</div>
-						<ul class="footer-list-6">
-							<li><a href="#">
-								<img src="img/icons/vk.png" alt="">
-							</a></li>
-							<li><a href="#">
-								<img src="img/icons/youtybe.png" alt="">
-							</a></li>
-							<li><a href="#">
-								<img src="img/icons/inst.png" alt="">
-							</a></li>
+					</div>
+					<div class="footer-bottom">
+						<ul>
+							<li>@2019 Nuahule Store MSk 18+</li>
 						</ul>
 					</div>
 				</div>
-				<div class="footer-bottom">
-					<ul>
-						<li>@2019 Nuahule Store MSk 18+</li>
-					</ul>
-				</div>
 			</div>
-		</div>
-	</footer>
+		</footer>
 		<div class="modal-windows-all">
-		<div class="container-menu">
-			<!-- Модальное окно ВХОД -->
-			<a href="#x" class="overlay-menu" id="win2"></a>
-			<div class="popup-menu">
-				<div class="poup-1">
-					<p class="popup-menu__name">вход</p>
-					<div class="form-popup">
-						<form action="#" method="post">
-							<div class="common-input">
-								<input type="pasword"  class="form-control" required>		
-								<div class="placeholder">E-mail<span class="red">*</span></div>
-							</div>
-							<div class="common-input">
-								<input type="pasword"  class="form-control" required>		
-								<div class="placeholder">Пароль<span class="red">*</span></div>
-							</div>
-							<div class="remember_me">
-								<div class="check_all">
-									<input type="checkbox" id="checkModal1" name="checkModal1" />
-									<label for="checkModal1">Запомнить меня</a></label>
+			<div class="container-menu">
+				<!-- Модальное окно ВХОД -->
+				<a href="#x" class="overlay-menu" id="win2"></a>
+				<div class="popup-menu">
+					<div class="poup-1">
+						<p class="popup-menu__name">вход</p>
+						<div class="form-popup">
+							<form action="#" method="post">
+								<div class="common-input">
+									<input type="pasword"  class="form-control" required>
+									<div class="placeholder">E-mail<span class="red">*</span></div>
 								</div>
-								<a href="#">Забыли пароль?</a>
-							</div>
-							<a href="#" class="btn-enter">Войти</a>
-						</form>
+								<div class="common-input">
+									<input type="pasword"  class="form-control" required>
+									<div class="placeholder">Пароль<span class="red">*</span></div>
+								</div>
+								<div class="remember_me">
+									<div class="check_all">
+										<input type="checkbox" id="checkModal1" name="checkModal1" />
+										<label for="checkModal1">Запомнить меня</a></label>
+									</div>
+									<a href="#">Забыли пароль?</a>
+								</div>
+								<a href="#" class="btn-enter">Войти</a>
+							</form>
+						</div>
+						<a class="close-menu" title="Закрыть" href="#close"></a>
+						<img src="img/icons/poupImg.png" alt="" class="poup_img">
 					</div>
-					<a class="close-menu" title="Закрыть" href="#close"></a>
-					<img src="img/icons/poupImg.png" alt="" class="poup_img">
+				</div>
+			</div>
+			<div class="container-menu">
+				<!-- Модальное окно РЕГИСТРАЦИЯ -->
+				<a href="#x" class="overlay-menu" id="win4"></a>
+				<div class="popup-menu popup-menu-registraition">
+					<div class="poup-1">
+						<p class="popup-menu__name">Регистрация</p>
+						<div class="form-popup">
+							<form action="#" method="post">
+								<div class="common-input">
+									<input type="text"  class="form-control" required>
+									<div class="placeholder">Имя<span class="red">*</span></div>
+								</div>
+								<div class="common-input">
+									<input type="text"  class="form-control" required>
+									<div class="placeholder">Фамилия<span class="red">*</span></div>
+								</div>
+								<div class="common-input">
+									<input type="number"  class="form-control" required>
+									<div class="placeholder">Телефон<span class="red">*</span></div>
+								</div>
+								<div class="common-input">
+									<input type="text"  class="form-control" required>
+									<div class="placeholder">E-mail<span class="red">*</span></div>
+								</div>
+								<div class="date">
+									<p class="date_bird">Дата рождения</p>
+									<div class="date_all">
+										<div class="select">
+											<img src="img/icons/arrowFilter.png" alt="" class="img_select">
+											<a href="javascript:void(0);" class="slct">01</a>
+											<ul class="drop">
+												<li><a href="javascript:void(0)">01</a></li>
+												<li><a href="javascript:void(0)">02</a></li>
+												<li><a href="javascript:void(0)">03</a></li>
+												<li><a href="javascript:void(0)">04</a></li>
+												<li><a href="javascript:void(0)">05</a></li>
+												<li><a href="javascript:void(0)">06</a></li>
+												<li><a href="javascript:void(0)">07</a></li>
+												<li><a href="javascript:void(0)">08</a></li>
+												<li><a href="javascript:void(0)">09</a></li>
+												<li><a href="javascript:void(0)">10</a></li>
+												<li><a href="javascript:void(0)">11</a></li>
+												<li><a href="javascript:void(0)">12</a></li>
+											</ul>
+											<input type="hidden" id="select" />
+										</div>
+										<div class="select">
+											<img src="img/icons/arrowFilter.png" alt="" class="img_select">
+											<a href="javascript:void(0);" class="slct">янв.</a>
+											<ul class="drop">
+												<li><a href="javascript:void(0)">янв.</a></li>
+												<li><a href="javascript:void(0)">фев.</a></li>
+												<li><a href="javascript:void(0)">март</a></li>
+												<li><a href="javascript:void(0)">апр.</a></li>
+												<li><a href="javascript:void(0)">май</a></li>
+												<li><a href="javascript:void(0)">июнь</a></li>
+											</ul>
+											<input type="hidden" id="select" />
+										</div>
+										<div class="select">
+											<img src="img/icons/arrowFilter.png" alt="" class="img_select">
+											<a href="javascript:void(0);" class="slct">1865</a>
+											<ul class="drop">
+												<li><a href="javascript:void(0)">1865</a></li>
+												<li><a href="javascript:void(0)">1865</a></li>
+												<li><a href="javascript:void(0)">1865</a></li>
+												<li><a href="javascript:void(0)">1865</a></li>
+												<li><a href="javascript:void(0)">1865</a></li>
+												<li><a href="javascript:void(0)">1865</a></li>
+												<li><a href="javascript:void(0)">1865</a></li>
+												<li><a href="javascript:void(0)">1865</a></li>
+												<li><a href="javascript:void(0)">1865</a></li>
+											</ul>
+											<input type="hidden" id="select" />
+										</div>
+									</div>
+								</div>
+								<div class="common-input">
+									<input type="text"  class="form-control" required>
+									<div class="placeholder">Пароль<span class="red">*</span></div>
+								</div>
+								<div class="common-input">
+									<input type="text"  class="form-control" required>
+									<div class="placeholder">Повторите пароль<span class="red">*</span></div>
+								</div>
+								<a href="#" class="btn-enter">Зарегистрироваться</a>
+							</form>
+						</div>
+						<a class="close-menu" title="Закрыть" href="#close"></a>
+						<img src="img/icons/poupImg.png" alt="" class="poup_img">
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="container-menu">
-			<!-- Модальное окно РЕГИСТРАЦИЯ -->
-			<a href="#x" class="overlay-menu" id="win4"></a>
-			<div class="popup-menu popup-menu-registraition">
-				<div class="poup-1">
-					<p class="popup-menu__name">Регистрация</p>
-					<div class="form-popup">
-						<form action="#" method="post">
-							<div class="common-input">
-								<input type="text"  class="form-control" required>		
-								<div class="placeholder">Имя<span class="red">*</span></div>
-							</div>
-							<div class="common-input">
-								<input type="text"  class="form-control" required>		
-								<div class="placeholder">Фамилия<span class="red">*</span></div>
-							</div>
-							<div class="common-input">
-								<input type="number"  class="form-control" required>		
-								<div class="placeholder">Телефон<span class="red">*</span></div>
-							</div>
-							<div class="common-input">
-								<input type="text"  class="form-control" required>		
-								<div class="placeholder">E-mail<span class="red">*</span></div>
-							</div>
-							<div class="date">
-								<p class="date_bird">Дата рождения</p>
-								<div class="date_all">
-									<div class="select">
-										<img src="img/icons/arrowFilter.png" alt="" class="img_select">
-										<a href="javascript:void(0);" class="slct">01</a>
-										<ul class="drop">
-											<li><a href="javascript:void(0)">01</a></li>
-											<li><a href="javascript:void(0)">02</a></li>
-											<li><a href="javascript:void(0)">03</a></li>
-											<li><a href="javascript:void(0)">04</a></li>
-											<li><a href="javascript:void(0)">05</a></li>
-											<li><a href="javascript:void(0)">06</a></li>
-											<li><a href="javascript:void(0)">07</a></li>
-											<li><a href="javascript:void(0)">08</a></li>
-											<li><a href="javascript:void(0)">09</a></li>
-											<li><a href="javascript:void(0)">10</a></li>
-											<li><a href="javascript:void(0)">11</a></li>
-											<li><a href="javascript:void(0)">12</a></li>
-										</ul>
-										<input type="hidden" id="select" />
-									</div>
-									<div class="select">
-										<img src="img/icons/arrowFilter.png" alt="" class="img_select">
-										<a href="javascript:void(0);" class="slct">янв.</a>
-										<ul class="drop">
-											<li><a href="javascript:void(0)">янв.</a></li>
-											<li><a href="javascript:void(0)">фев.</a></li>
-											<li><a href="javascript:void(0)">март</a></li>
-											<li><a href="javascript:void(0)">апр.</a></li>
-											<li><a href="javascript:void(0)">май</a></li>
-											<li><a href="javascript:void(0)">июнь</a></li>
-										</ul>
-										<input type="hidden" id="select" />
-									</div>
-									<div class="select">
-										<img src="img/icons/arrowFilter.png" alt="" class="img_select">
-										<a href="javascript:void(0);" class="slct">1865</a>
-										<ul class="drop">
-											<li><a href="javascript:void(0)">1865</a></li>
-											<li><a href="javascript:void(0)">1865</a></li>
-											<li><a href="javascript:void(0)">1865</a></li>
-											<li><a href="javascript:void(0)">1865</a></li>
-											<li><a href="javascript:void(0)">1865</a></li>
-											<li><a href="javascript:void(0)">1865</a></li>
-											<li><a href="javascript:void(0)">1865</a></li>
-											<li><a href="javascript:void(0)">1865</a></li>
-											<li><a href="javascript:void(0)">1865</a></li>
-										</ul>
-										<input type="hidden" id="select" />
-									</div>
-								</div>
-							</div>
-							<div class="common-input">
-								<input type="text"  class="form-control" required>		
-								<div class="placeholder">Пароль<span class="red">*</span></div>
-							</div>
-							<div class="common-input">
-								<input type="text"  class="form-control" required>		
-								<div class="placeholder">Повторите пароль<span class="red">*</span></div>
-							</div>
-							<a href="#" class="btn-enter">Зарегистрироваться</a>
-						</form>
-					</div>
-					<a class="close-menu" title="Закрыть" href="#close"></a>
-					<img src="img/icons/poupImg.png" alt="" class="poup_img">
-				</div>
-			</div>
-		</div>
-	</div>
 	</div>
 </div>
 <!-- scripts -->

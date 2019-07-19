@@ -195,6 +195,7 @@ $( "#amount12" ).val( ui.values[ 1 ] );
 $( "#amount11" ).val( $( "#slider-range6" ).slider( "values", 0 ) );
 $( "#amount12" ).val( $( "#slider-range6" ).slider( "values", 1 ) );
 } );
+// счетчик товаров
 $('.inc').on('click', function() {
 	const $input = $(this).closest('div').find('input');
 	$input.val(parseInt($input.val(), 10) + 1);
@@ -203,6 +204,54 @@ $('.dec').on('click', function() {
 	const $input = $(this).closest('div').find('input');
 	parseInt($input.val(), 10) > 1 && $input.val(parseInt($input.val(), 10) - 1);
 });
+// счетчик товаров
+ $( function ()
+    {
+
+        // По нажатии любой из кнопок "-" на странице
+        $( '[data-role="decrement"]' ).on( 'click', function ()
+        {
+            // находим соответствующий ей инпут
+            var input = $( this ).parent().find( '[data-role="count"]' );
+            // и берем его значение
+            var currentValue = parseInt( input.val() );
+
+            // уменьшаем это значение на 1, если оно больше нуля, и записываем обратно в инпут
+            if ( currentValue > 0 )
+            {
+                currentValue--;
+                $( input ).val( currentValue );
+            }
+
+
+            // если уменьшенное значение <= 0
+            if ( currentValue <= 0 )
+            {
+                // скрываем кнопку и инпут
+                $( this ).parent().find( '[data-role=decrement],[data-role=count]' ).hide();
+            }
+
+        } );
+
+        // По нажатии любой из кнопок "+" на странице
+        $( '[data-role="increment"]' ).on( 'click', function ()
+        {
+            // находим соответствующий ей инпут
+            var input = $( this ).parent().find( '[data-role="count"]' );
+            // и берем его значение
+            var currentValue = parseInt( input.val() );
+            // увеличиваем это значение на 1
+            currentValue++;
+            // и записываем обратно
+            input.val( currentValue );
+
+            // увеличенное значение всегда > 0, так что после любого инкремента показываем кнопку декремента
+            $( this ).parent().find( '[data-role=decrement],[data-role=count]' ).show();
+
+        } );
+
+
+    } );
 // Select
 $('.slct').click(function(){
 var dropBlock = $(this).parent().find('.drop');
