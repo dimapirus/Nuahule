@@ -3091,8 +3091,9 @@ color: #292929;
 	font-family: MontserratSemiBold;
 	display: inline-block;
 }
-.good_modal,
-.product .good_modal {
+.popup-menu .good_modal,
+.product .good_modal,
+.good_modal {
 	padding: 35px 45px;
 }
 .good_modal .good_modal_first,
@@ -3108,6 +3109,7 @@ padding-bottom: 30px;
 border-bottom: 1px solid #E5E5E5;
 }
 .product .good_modal .good_modal_first p:nth-of-type(2),
+.popup-menu .good_modal .good_modal_first p:nth-of-type(2),
 .good_modal .good_modal_first p:nth-of-type(2) {
 	display: flex;
 	flex-direction: row;
@@ -3120,8 +3122,9 @@ border-bottom: 1px solid #E5E5E5;
 font-size: 18px;
 color: #B6B6B6;
 }
-.product .good_modal.good_modal_first p:nth-of-type(2) span,
-.good_modal.good_modal_first p:nth-of-type(2) span {
+.product .good_modal .good_modal_first p:nth-of-type(2) span,
+.popup-menu .good_modal .good_modal_first p:nth-of-type(2) span,
+.good_modal .good_modal_first p:nth-of-type(2) span {
 	margin-left: 12px;
 	font-family: MontserratBold;
 font-size: 18px;
@@ -3132,6 +3135,7 @@ color: #292929;
 	width: 855px;
 }
 .product .good_modal .good_modal_second,
+.popup-menu .good_modal .good_modal_second,
 .good_modal .good_modal_second {
 	padding: 33px 0 14px 0;
 	display: flex;
@@ -3139,8 +3143,9 @@ color: #292929;
 	align-items: center;
 	border-bottom: 1px solid #E5E5E5;
 }
-.good_modal .good_modal_second p:nth-of-type(1),
-.product .good_modal .good_modal_second p:nth-of-type(1) {
+.popup-menu .good_modal .good_modal_second p:nth-of-type(1),
+.product .good_modal .good_modal_second p:nth-of-type(1),
+.good_modal .good_modal_second p:nth-of-type(1) {
 	text-align: left;
 font-family: MontserratSemiBold;
 font-size: 30px;
@@ -3148,15 +3153,17 @@ letter-spacing: 0.02em;
 text-transform: uppercase;
 color: #292929;
 } 
-.good_modal .good_modal_second p:nth-of-type(1) span,
-.product .good_modal .good_modal_second p:nth-of-type(1) span {
+.popup-menu .good_modal .good_modal_second p:nth-of-type(1) span,
+.product .good_modal .good_modal_second p:nth-of-type(1) span,
+.good_modal .good_modal_second p:nth-of-type(1) span {
 	display: block;
 font-size: 14px;
 text-decoration-line: line-through;
 color: #B6B6B6;
 }
-.good_modal .good_modal_second p:nth-of-type(2) a,
-.product .good_modal .good_modal_second p:nth-of-type(2) a {
+.popup-menu .good_modal .good_modal_second p:nth-of-type(2) a,
+.product .good_modal .good_modal_second p:nth-of-type(2) a,
+.good_modal .good_modal_second p:nth-of-type(2) a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -3169,12 +3176,14 @@ font-size: 18px;
 text-transform: uppercase;
 color: #FFFFFF;
 }
-.good_modal .good_modal_second p:nth-of-type(2) span,
-.product .good_modal .good_modal_second p:nth-of-type(2) span {
+.popup-menu .good_modal .good_modal_second p:nth-of-type(2) span,
+.product .good_modal .good_modal_second p:nth-of-type(2) span,
+.good_modal .good_modal_second p:nth-of-type(2) span {
 	padding-top: 10px;
 }
-.good_modal .good_modal_second p:nth-of-type(2) span span,
-.product .good_modal .good_modal_second p:nth-of-type(2) span span {
+.popup-menu .good_modal .good_modal_second p:nth-of-type(2) span span,
+.product .good_modal .good_modal_second p:nth-of-type(2) span span,
+.good_modal .good_modal_second p:nth-of-type(2) span span {
 	margin-top: 10px;
 	margin-left: 8px;
 font-family: MontserratBold;
@@ -3182,67 +3191,85 @@ font-size: 18px;
 text-align: right;
 color: #292929;
 } 
-.good_modal .main_characteristics_name,
-.product .good_modal .main_characteristics_name {
+.popup-menu .good_modal .main_characteristics_name,
+.product .good_modal .main_characteristics_name,
+.good_modal .main_characteristics_name {
 	text-align: left;
 	padding-top: 32px;
 	max-width: 100%;
 }
 .good_modal .main_characteristics_name span,
-.product .good_modal .main_characteristics_name span {
+.product .popup-menu .good_modal .main_characteristics_name span,
+.good_modal .main_characteristics_name span {
 	display: inline-block;
 	font-family: MontserratBold;
 font-size: 18px;
 color: #B6B6B6;
 }
 .popup-menu .good_modal div,
-.product .popup-menu .good_modal div {
+.product .popup-menu .good_modal div,
+.good_modal div {
 	width: auto;
 	margin: 0;
 }
 .popup-menu .good_modal .tab_taste,
-.product .popup-menu .good_modal .tab_taste {
+.product .popup-menu .good_modal .tab_taste,
+.good_modal .tab_taste {
 	height: auto;
 	padding: 0;
 }
 .popup-menu .good_modal .tab_taste ul,
-.product .popup-menu .good_modal .tab_taste ul {
+.product .popup-menu .good_modal .tab_taste ul,
+.good_modal .tab_taste ul {
 	padding-right: 5px;
 	height: 285px;
 	overflow-y: scroll;
 }
 .popup-menu .good_modal .tab_taste li,
-.product .popup-menu .good_modal .tab_taste li {
+.product .popup-menu .good_modal .tab_taste li,
+.good_modal .tab_taste li {
 	padding: 14px 0;
 	height: auto;
 	flex-direction: row;
 }
-.product .good_modal li:nth-of-type(2) img {
+.product .good_modal li:nth-of-type(2) img,
+.popup-menu .good_modal li:nth-of-type(2) img,
+.good_modal li:nth-of-type(2) img {
 	width: auto;
 }
-.product .good_modal li p span {
+.product .good_modal li p span,
+.popup-menu .good_modal li p span,
+.good_modal li p span {
 	font-family: Montserrat;
 font-size: 14px;
 color: #292929;
 text-transform: none;
 max-width: 100%;
 }
-.product .good_modal .good_modal_first p span {
+.product .good_modal .good_modal_first p span,
+.popup-menu .good_modal .good_modal_first p span,
+.good_modal .good_modal_first p span {
 	font-family: MontserratBold;
 font-size: 18px;
 color: #292929;
 margin-left: 12px;
 }
-.product .good_modal li p {
+.product .good_modal li p,
+.popup-menu .good_modal li p,
+.good_modal li p {
 	max-width: 100%;
 }
-.product .good_modal li p:nth-of-type(2) {
+.product .good_modal li p:nth-of-type(2),
+.popup-menu .good_modal li p:nth-of-type(2),
+.good_modal li p:nth-of-type(2) {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
 	max-width: 100%;
 }
-.product .good_modal li .tasty_link a {
+.product .good_modal li .tasty_link a,
+.popup-menu .good_modal li .tasty_link a,
+.good_modal li .tasty_link a {
 	margin-left: 10px;
 }
 .inc, .dec {
@@ -3266,14 +3293,17 @@ margin-left: 5px;
 margin-right: 5px;
 }
 .product .good_modal .mobile_good,
+.popup-menu .good_modal .mobile_good,
 .good_modal .mobile_good {
 	display: none;
 }
 .product .good_modal_wrap .good_modal .mobile_good,
+.popup-menu .good_modal_wrap .good_modal .mobile_good,
 .good_modal_wrap .good_modal .mobile_good {
 padding-top: 20px;
 }
 .product .good_modal_wrap .good_modal .mobile_good .btn-good,
+.popup-menu .good_modal_wrap .good_modal .mobile_good .btn-good,
 .good_modal_wrap .good_modal .mobile_good .btn-good {
 	margin-top: 5px;
 	display: flex;
@@ -3291,10 +3321,12 @@ text-transform: uppercase;
 color: #FFFFFF;
 }
 .product .good_modal_wrap .good_modal .mobile_good .order,
+.popup-menu .good_modal_wrap .good_modal .mobile_good .order,
 .good_modal_wrap .good_modal .mobile_good .order {
 	margin-bottom: 15px;
 }
 .product .good_modal_wrap .good_modal .mobile_good p,
+.popup-menu .good_modal_wrap .good_modal .mobile_good p,
 .good_modal_wrap .good_modal .mobile_good p {
 	padding-top: 5px;
 	font-family: Montserrat;
@@ -3303,6 +3335,7 @@ color: #292929;
 text-transform: none;
 }
 .product .good_modal_wrap .good_modal .mobile_good span,
+.popup-menu .good_modal_wrap .good_modal .mobile_good p span,
 .good_modal_wrap .good_modal .mobile_good p span {
 	display: inline-block;
 	font-family: MontserratBold;
@@ -3313,16 +3346,19 @@ color: #292929;
 	display: flex;
 }
 .product .popup-menu .good_modal .size_cube_modal div,
+.popup-menu .good_modal .size_cube_modal div,
 .size_cube_modal div {
 	width: auto;
 	margin-right: 30px;
 }
+.popup-menu .size_cube_modal div label,
 .size_cube_modal div label {
 	position: relative;
 	z-index: 3;
 	background: transparent;
 }
 .product .size_cube_modal div p,
+.popup-menu .size_cube_modal div p,
 .size_cube_modal div p {
 	position: absolute;
 top: 14px;
@@ -3354,6 +3390,7 @@ color: #292929;
     font-size: 20px;    
 }
 .product .size_cube .main_characteristics_name,
+.popup-menu .size_cube .main_characteristics_name,
 .size_cube .main_characteristics_name {
 	font-family: MontserratBold;
 font-size: 18px;
@@ -3361,7 +3398,8 @@ color: #292929;
 padding-bottom: 24px;
 text-transform: none;
 }
-.product .good_modal .size_cube {
+.product .good_modal .size_cube,
+.popup-menu .good_modal .size_cube {
 	padding: 0;
 	padding-bottom: 140px;
 }
@@ -4015,5 +4053,8 @@ color: #292929;
 }
 .list_information a:hover {
 	color: #4BC9FF;
+}
+.active input[type=radio] + label:before {
+	border: 3px solid #00BB2E;
 }
 
